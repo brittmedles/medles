@@ -1,142 +1,262 @@
-#fb_main{
-  margin-top: 20px;
-  max-width: 650px;
-  margin: 50px auto 50px auto;
+#nav{
+  background: #ECF0F1;
+  color: black;
+  height: 60px;
 }
 
-#main_left{
-  float: left;
+#banner{
+  background: #ECF0F1;
 }
 
-#main_right{
-  float: right;
-}
-
-#tagline img{
-  margin-bottom: 10px;
-}
-
-#tagline h1{
-  color: #000000;
-  font-family: 'Droid Sans Mono';
-  font-size: 50px;
-  -webkit-margin-after: 0em;
-}
-
-#tagline h2{
-  color: #000000;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  padding-left: 5px;
-  margin-bottom: 20px;
-}
-
-#errors li{
-  clear: both;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;  
-}
-
-#hp_form h2{
-  color: #000000;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  padding-left: 5px;
-  margin-bottom: 20px; 
-}
-
-#hp_form p{
-  float: left;
-  color: #0000000;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  text-decoration: none;
-  padding-left: 5px;
-}
-
-#hp_form a{
-  color: #2B72A8;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  text-decoration: none;
-  padding-left: 5px;
-  padding-bottom: 200px;
-}
-
-#signup_form{
-  border: solid;
-  width: 300px;
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  padding: 5px;
-}
-
-#signup_form li{
-  list-style-type: none;
-}
-
-#signup_fields{
-  margin: auto;
-}
-
-#signup_form label{
-  width: 4em;
-  float: left;
-  text-align: left;
-  padding-top: 2px;
-  margin-right: 20px;
-}
-
-#signup_form .button{
-  float: right;
-  margin-top: 10px;
-  margin-right: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
-}
-
-/* -------------------------- */
-
-#hp_flipbk{
-  width: 300px;
-  height: 300px;
-}
-
-video{
-  width: 300px;
-  height: 300px;
-}
-
-/* -------------------------- */
-
-#midline{
-  background: #3A383D;
-  color: #FFFFFF;
+.center{
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
 }
 
-/* -------------------------- */
+/* `Nav links
+----------------------------------------------------------------------------------------------------*/
 
-#hp_public_fbs{
-  
-  margin-top: 20px;
-  max-width: 650px;
-  margin: 50px auto 50px auto;
+#links a{
+  float: right;
 }
 
-#public_fbs li{
-  list-style-type: none;
+/* `Social media icons (font awesome)
+----------------------------------------------------------------------------------------------------*/
+
+#flip_icon{
+  float: left;
+}
+
+#social_media{
+  float: right;
+  margin: 5px 10px 0 0;
+  padding: 0;
+}
+
+#social_media li{
   display: inline;
-  margin: 1px;
 }
 
-#public_fbs a{
-  text-decoration: none;
+#social_media a{
+  display: inline-block;
+  width: 24px;
+  height: 0;
+  padding-top: 24px;
+  overflow: hidden;
 }
+
+.facebook_icon {
+    position: relative;
+}
+ 
+.facebook_icon:before {
+    content: "\f09a"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+/*--adjust as necessary--*/
+    color: #FFFFFF;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+.twitter_icon {
+    position: relative;
+}
+ 
+.twitter_icon:before {
+    content: "\f099"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+/*--adjust as necessary--*/
+    color: #FFFFFF;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+.tumblr_icon {
+    position: relative;
+}
+ 
+.tumblr_icon:before {
+    content: "\f173"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+/*--adjust as necessary--*/
+    color: #FFFFFF;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+/* ???
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//#fb_main{
+//  margin-top: 20px;
+//  max-width: 650px;
+//  margin: 50px auto 50px auto;
+//}
+//
+//#main_left{
+//  float: left;
+//}
+//
+//#main_right{
+//  float: right;
+//}
+//
+//#tagline img{
+//  margin-bottom: 10px;
+//}
+//
+//#tagline h1{
+//  color: #000000;
+//  font-family: 'Droid Sans Mono';
+//  font-size: 50px;
+//  -webkit-margin-after: 0em;
+//}
+//
+//#tagline h2{
+//  color: #000000;
+//  font-family: Arial, Helvetica, sans-serif;
+//  font-size: 15px;
+//  padding-left: 5px;
+//  margin-bottom: 20px;
+//}
+//
+//#errors li{
+//  clear: both;
+//  font-family: Arial, Helvetica, sans-serif;
+//  font-size: 10px;  
+//}
+//
+//#hp_form h2{
+//  color: #000000;
+//  font-family: Arial, Helvetica, sans-serif;
+//  font-size: 15px;
+//  padding-left: 5px;
+//  margin-bottom: 20px; 
+//}
+//
+//#hp_form p{
+//  float: left;
+//  color: #0000000;
+//  font-weight: bold;
+//  font-family: Arial, Helvetica, sans-serif;
+//  font-size: 15px;
+//  text-decoration: none;
+//  padding-left: 5px;
+//}
+//
+//#hp_form a{
+//  color: #2B72A8;
+//  font-family: Arial, Helvetica, sans-serif;
+//  font-size: 15px;
+//  text-decoration: none;
+//  padding-left: 5px;
+//  padding-bottom: 200px;
+//}
+//
+//#signup_form{
+//  border: solid;
+//  width: 300px;
+//  display: inline-block;
+//  font-family: Arial, Helvetica, sans-serif;
+//  font-size: 15px;
+//  padding: 5px;
+//}
+//
+//#signup_form li{
+//  list-style-type: none;
+//}
+//
+//#signup_fields{
+//  margin: auto;
+//}
+//
+//#signup_form label{
+//  width: 4em;
+//  float: left;
+//  text-align: left;
+//  padding-top: 2px;
+//  margin-right: 20px;
+//}
+//
+//#signup_form .button{
+//  float: right;
+//  margin-top: 10px;
+//  margin-right: 15px;
+//  font-family: Arial, Helvetica, sans-serif;
+//  font-size: 10px;
+//}
+//
+///* -------------------------- */
+//
+//#hp_flipbk{
+//  width: 300px;
+//  height: 300px;
+//}
+//
+//video{
+//  width: 300px;
+//  height: 300px;
+//}
+//
+///* -------------------------- */
+//
+//#midline{
+//  background: #3A383D;
+//  color: #FFFFFF;
+//  text-align: center;
+//  font-family: Arial, Helvetica, sans-serif;
+//  font-size: 15px;
+//}
+//
+///* -------------------------- */
+//
+//#hp_public_fbs{
+//  
+//  margin-top: 20px;
+//  max-width: 650px;
+//  margin: 50px auto 50px auto;
+//}
+//
+//#public_fbs li{
+//  list-style-type: none;
+//  display: inline;
+//  margin: 1px;
+//}
+//
+//#public_fbs a{
+//  text-decoration: none;
+//}
 
 
 

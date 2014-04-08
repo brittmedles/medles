@@ -7,7 +7,7 @@
   <title>Flipbook</title>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
@@ -25,7 +25,7 @@
   
   <div id="container">
     
-    <div id="top_bar" class="clearfix">
+    <!-- <div id="top_bar" class="clearfix">
       <div id="home">
         <%= link_to("flipbook", :root) %>
       </div>
@@ -36,11 +36,11 @@
           <%= link_to("Log Out", login_path(current_user.id), :method => :delete) %>
         <% else %>
   
-        <!-- <a href="#"><%= link_to("Sign Up", :new_user) %></a> |  -->
-        <%= link_to("Log In", :new_login) %>
+        <a href="#"><%= link_to("Sign Up", :new_user) %></a> |  -->
+        <!-- <%= link_to("Log In", :new_login) %>
   
-        <% end %>
-      </div>
+        <% end %> -->
+      <!-- </div>
       
       <div id="fb-root"></div>
       
@@ -51,7 +51,7 @@
       </ul>
     </div>
     
-  </div>
+  </div> -->
   
   <div>
     
@@ -59,11 +59,11 @@
     
   </div>
   
-  <footer>
+  <!-- <footer>
     <p>
     © 2014 flipbook, Inc. • Proudly built on the Silicon Prairie • Terms of service • Privacy Policy
     </p>
-  </footer>
+  </footer> -->
   
 </body>
 </html>

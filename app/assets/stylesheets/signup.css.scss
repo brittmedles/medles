@@ -1,6 +1,7 @@
 #signup_form{
   height: 60px;
   background: #2C3E50;
+  display: none;
 }
 
 #signup_name{
@@ -33,4 +34,9 @@
   width: 220px;
   height: 26px;
   font-size: 18px;
+}
+
+#signup_button2{
+  height: 84px;
+  display: none;
 }

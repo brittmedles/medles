@@ -47,10 +47,12 @@
         share what you make
       </div>
       
-      ...
+      <div id="signup">
+      <%= render :partial => "form" %>
+      </div>
 
-      <div id="signup" class="grid_4 alpha omega prefix_4 suffix_4">
-        <%= button_to "Sign Up", new_user_path, :method => :get, id: "new_user_link", :class => "ctr_button", :remote => true %>
+      <div id="signup_button1" class="grid_4 alpha omega prefix_4 suffix_4">
+        <%= button_to "Sign Up", new_user_path, :method => :get, id: "get_signup", :class => "ctr_button" %>
       </div>
   </div>  
       

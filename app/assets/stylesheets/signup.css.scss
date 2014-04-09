@@ -1,0 +1,36 @@
+#signup_form{
+  height: 60px;
+  background: #2C3E50;
+}
+
+#signup_name{
+  margin-top: 14px;
+  margin-left: 5px;
+}
+
+#signup_email{
+  margin-top: 14px;
+  margin-left: 5px;
+}
+
+#signup_password{
+  margin-top: 14px;
+  margin-left: 5px;
+}
+
+#signup_pwconfirm{
+  margin-top: 14px;
+  margin-left: 5px;
+}
+
+#signup_form input[type="text"]{
+  width: 220px;
+  height: 26px;
+  font-size: 18px;
+}
+
+#signup_form input[type="password"]{
+  width: 220px;
+  height: 26px;
+  font-size: 18px;
+}

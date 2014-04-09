@@ -1,35 +1,58 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<div id="login">
-  <h2>Log In</h2>
-
-    <% if @user %>
-     Username or password incorrect
-    <% end %>
-
-  <div id="login_form">
-    <ul id="login_fields">
-
-      <%= form_tag logins_path do %>
-
-    <li>
-      <%= label_tag :email %>
-      <%= text_field_tag :email %>
-    </li>
-
-    <li>
-      <%= label_tag :password %>
-      <%= password_field_tag :password %>
-    </li>
-
-      <%= submit_tag "Log In", :class => 'button' %>
-
+  
+<div id="container" class="container_12">
+  
+    <div id="nav" class="grid_12">
+        <div id="social" class="grid_4 alpha">
+            <div id="flip_icon">
+              <%= link_to :root do %>
+                <%= image_tag "flipbook60.jpg" %>
+              <% end %>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <div id="links" class="grid_4 omega push_4">
+      <% if current_user %>
+        <%= link_to("Profile", user_url(current_user.id)) %> |
+        <%= link_to("Log Out", login_path(current_user.id), :method => :delete) %>
+      <% else %>
       <% end %>
+    </div> -->
+    
+    <div id="banner" class="grid_12">
+      <div id="name" class="center">
+        <span>flip</span>book
+      </div>
+  
+      <div class="separator"></div>
+  
+      <div id="login_form" class="grid_12 alpha omega">
+        
+          <% if @user %>
+           Username or password incorrect
+          <% end %>
+          
+          <%= form_tag logins_path do %>
 
-    </ul>
-  </div>
+          <div id="email" class="grid_4 alpha omega prefix_4 suffix_4">
+            <%= text_field_tag :email, "Email" %>
+          </div>
+
+          <div id-"password" class="grid_4 alpha omega prefix_4 suffix_4">
+            <%= password_field_tag :password, "Password" %>
+          </div>
+          
+          <div id="signup" class="grid_4 alpha omega prefix_4 suffix_4">
+            <%= submit_tag "Log In", :class => 'ctr_button' %>
+          </div>
+          <% end %>
+            
+      </div>
+    </div>
+
 </div>
 
 </body>

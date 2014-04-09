@@ -1,45 +1,77 @@
-#login{
-  display: block;
-  margin-top: 20px;
-  margin-left: 20%;  
+#email, #password{
+  width: 300px;
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-#login h2{
-  color: #000000;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  padding-left: 5px;
-  margin-bottom: 20px;
+#submit{
+  height: 60px;
 }
 
 #login_form{
-  border-style: solid;
-  width: 300px;
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  padding: 5px;
+  height: 500px;
 }
 
-#login_form li{
-  list-style-type: none;
+#login_form input[type="text"]{
+  height: 26px;
+  font-size: 18px;
 }
 
-#login_fields{
-  margin: auto;
+#login_form input[type="password"]{
+  height: 26px;
 }
 
-#login_form label{
-  width: 4em;
-  float: left;
-  text-align: left;
-  padding-top: 2px;
-  margin-right: 20px;
-}
 
-#login_form .button{
-  float: right;
-  margin-right: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
-}
+
+
+
+
+
+
+
+//#login{
+//  display: block;
+//  margin-top: 20px;
+//  margin-left: 20%;  
+//}
+//
+//#login h2{
+//  color: #000000;
+//  font-family: Arial, Helvetica, sans-serif;
+//  font-size: 15px;
+//  padding-left: 5px;
+//  margin-bottom: 20px;
+//}
+//
+//#login_form{
+//  border-style: solid;
+//  width: 300px;
+//  display: inline-block;
+//  font-family: Arial, Helvetica, sans-serif;
+//  font-size: 15px;
+//  padding: 5px;
+//}
+//
+//#login_form li{
+//  list-style-type: none;
+//}
+//
+//#login_fields{
+//  margin: auto;
+//}
+//
+//#login_form label{
+//  width: 4em;
+//  float: left;
+//  text-align: left;
+//  padding-top: 2px;
+//  margin-right: 20px;
+//}
+//
+//#login_form .button{
+//  float: right;
+//  margin-right: 15px;
+//  font-family: Arial, Helvetica, sans-serif;
+//  font-size: 10px;
+//}

@@ -7,7 +7,7 @@
     </div>
   <% end %> -->
 
-
+<div id="signup_all">
   <div id="signup_form" class="grid_12 alpha omega">
     <div id="signup_name" class="grid_3 alpha">
         <%= f.text_field :name, :placeholder => "Name" %>
@@ -28,9 +28,10 @@
 
   <div class="grid_12 alpha omega">    
     <div id="signup_button2" class="grid_4 alpha omega prefix_4 suffix_4">
-      <%= f.submit "Sign Up", :class => 'ctr_button' %>
+      <%= f.submit "Sign Up", :class => 'ctr_button', :remote => true %>
     </div>
   </div>
+</div>
 <% end %>
   
   

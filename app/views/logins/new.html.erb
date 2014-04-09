@@ -31,22 +31,22 @@
   
       <div id="login_form" class="grid_12 alpha omega">
         
-          <% if @user %>
+          <!-- <% if @user %>
            Username or password incorrect
-          <% end %>
+          <% end %> -->
           
-          <%= form_tag logins_path do %>
+          <%= form_for logins_path do |f| %>
 
           <div id="email" class="grid_4 alpha omega prefix_4 suffix_4">
-            <%= text_field_tag :email, "Email" %>
+            <%= f.text_field :email, :placeholder => "Email" %>
           </div>
 
           <div id-"password" class="grid_4 alpha omega prefix_4 suffix_4">
-            <%= password_field_tag :password, "Password" %>
+            <%= f.password_field :password, :placeholder => "Password" %>
           </div>
           
-          <div id="signup" class="grid_4 alpha omega prefix_4 suffix_4">
-            <%= submit_tag "Log In", :class => 'ctr_button' %>
+          <div id="login" class="grid_4 alpha omega prefix_4 suffix_4">
+            <%= f.submit "Log In", :class => 'ctr_button' %>
           </div>
           <% end %>
             

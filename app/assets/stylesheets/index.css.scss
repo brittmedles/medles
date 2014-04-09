@@ -1,47 +1,46 @@
+//Colors:
+//WET ASPHALT #34495E (NAVY)
+//MIDNIGHT BLUE #2C3E50 (DK NAVY)
+//PETER RIVER #3498DB (LT BLUE)
+//BELIZE HOLE #2980B9 (DK BLUE)
+//CLOUDS #ECF0F1 (GREY)
+//SILVER #BDC3C7 (DKR GREY)
+//CONCRETE #95A5A6 (DK GREY)
+//ALIZARIN #E74C3C (LT RED)
+
+html, body, #container{
+  height: 100%;
+}
+
+#container{ 
+  min-height: auto !important;
+  height: 100%; 
+}
+
 #nav{
-  background: #ECF0F1;
+  background: #34495E;
   color: black;
   height: 60px;
 }
 
 #banner{
-  background: #ECF0F1;
+  background: #34495E;
 }
 
-.center{
-  text-align: center;
-}
-
-/* `Nav links
-----------------------------------------------------------------------------------------------------*/
-
-#links a{
-  float: right;
-}
-
-/* `Social media icons (font awesome)
+/* `Logo and social media icons (font awesome)
 ----------------------------------------------------------------------------------------------------*/
 
 #flip_icon{
   float: left;
+  width: 60px;
+  height: 60px;
 }
 
-#social_media{
-  float: right;
-  margin: 5px 10px 0 0;
-  padding: 0;
-}
-
-#social_media li{
-  display: inline;
-}
-
-#social_media a{
-  display: inline-block;
-  width: 24px;
-  height: 0;
-  padding-top: 24px;
-  overflow: hidden;
+#social_icon1{
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: #2C3E50;
 }
 
 .facebook_icon {
@@ -55,12 +54,19 @@
     font-weight: normal;
     text-decoration: none;
 /*--adjust as necessary--*/
-    color: #FFFFFF;
-    font-size: 18px;
-    padding-right: 0.5em;
+    color: #3498DB;
+    font-size: 28px;
+    padding-left: 23px;
     position: absolute;
-    top: 2px;
+    top: 9px;
     left: 0;
+}
+
+#social_icon2{
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: #2C3E50;
 }
 
 .twitter_icon {
@@ -74,12 +80,19 @@
     font-weight: normal;
     text-decoration: none;
 /*--adjust as necessary--*/
-    color: #FFFFFF;
-    font-size: 18px;
-    padding-right: 0.5em;
+    color: #3498DB;
+    font-size: 28px;
+    padding-left: 18px;
     position: absolute;
-    top: 2px;
+    top: 9px;
     left: 0;
+}
+
+#social_icon3{
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: #2C3E50;
 }
 
 .tumblr_icon {
@@ -93,20 +106,163 @@
     font-weight: normal;
     text-decoration: none;
 /*--adjust as necessary--*/
-    color: #FFFFFF;
-    font-size: 18px;
-    padding-right: 0.5em;
+    color: #3498DB;
+    font-size: 28px;
+    padding-left: 20px;
     position: absolute;
-    top: 2px;
+    top: 8px;
     left: 0;
 }
 
-/* ???
+/* `Nav links
 ----------------------------------------------------------------------------------------------------*/
 
+#links{
+  height: 60px;
+}
+
+#links a{
+  float: right;
+  line-height: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin-right: 20px;
+  color: #E74C3C;
+}
+
+/* `Name and tagline
+----------------------------------------------------------------------------------------------------*/
+
+#name{
+  height: 120px;
+  line-height: 600%;
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  color: #ECF0F1;
+}
+
+#name span{
+  font-weight: 400;
+}
+
+.separator{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 21%;
+  margin: 0 auto;
+}
+
+#tagline{
+  height: 60px;
+  line-height: 60px;
+  bottom: 0px;
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
+  font-weight: 100;
+  color: #ECF0F1;
+}
+
+.center{
+  text-align: center;
+}
+
+/* `Signup button
+----------------------------------------------------------------------------------------------------*/
+
+#signup{
+  height: 84px;
+}
+
+.ctr_button{
+  display: block;
+  margin: 0 auto;
+  margin-top: 24px;
+  border: none;
+  height: 60px;
+  width: 300px;
+  background: #3498DB;
+  color: #2C3E50;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* `Graphic
+----------------------------------------------------------------------------------------------------*/
+
+//#hp_flipbook{
+//  height: 164px;
+//  padding-top: 12px;
+//}
+//
+
+#graphic{
+  background: #34495E;
+  padding-bottom: 24px;
+}
+
+
+#backdrop{
+  width: 300px;
+  height: 300px;
+  background: #2C3E50;
+}
+//
+//video{
+//  width: 140px;
+//  height: 140px;
+//}
+
+/* `Buffer
+----------------------------------------------------------------------------------------------------*/
+
+#buffer{
+  height: 192px;
+  line-height: 192px;
+  background: #E74C3C;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#buff_text{
+  color: #2C3E50;
+}
+
+/* `Public flipbooks
+----------------------------------------------------------------------------------------------------*/
+
+#discover{
+  //height: 1620px;
+  background: #FFF;
+  height: 1620px;
+}
 
 
 
+/* `Footer
+----------------------------------------------------------------------------------------------------*/
+
+#footer .push {
+ height: 216px;
+}
+
+#footer{
+ background: #34495E;
+}
+
+.foot_buttons{
+  float: right;
+}
+
+#credits{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #FFF;
+  line-height: 216px;
+}
 
 
 

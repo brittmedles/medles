@@ -2,7 +2,6 @@
   height: 200px;
 }
 
-
 #signup_form{
   height: 60px;
   background: #2C3E50;
@@ -16,7 +15,7 @@
 }
 
 #signup_form input[type="text"]{
-  width: 220px;
+  width: 90%;
   height: 26px;
   font-size: 18px;
   color: gray;
@@ -24,7 +23,7 @@
 }
 
 #signup_form input[type="password"]{
-  width: 220px;
+  width: 90%;
   height: 26px;
   font-size: 18px;
   color: gray;

@@ -1,11 +1,17 @@
 class FlipbksController < ApplicationController
+  
+  def index
+    @user = User.find(session[:user_id])
+  end
+  
   def new
-        @book = Flipbk.new
+    @user = User.find(session[:user_id])
+    @book = Flipbk.new
   end
 
   def create
-
- 
+    
+    @user = User.find(session[:user_id])
     @book = Flipbk.new(params[:flipbk])
     @book.user_id = session[:user_id]
     
@@ -21,7 +27,6 @@ class FlipbksController < ApplicationController
         end
       end
 
-      
       if params[:photos]      
         params[:photos].each do |p|
           photo = Photo.find(p)
@@ -30,14 +35,11 @@ class FlipbksController < ApplicationController
             photo.order = o[1] if photo.id == o[0]
           end
           
-          
           photo.flipbk_id = @book.id
           photo.save
         end
       end
-      
-
-      
+  
       sorted = @book.photos.sort_by &:order
       sorted.each_with_index do |photo, index| 
         Dir.mkdir(dir) unless File.exists?(dir)
@@ -62,18 +64,16 @@ class FlipbksController < ApplicationController
     @book.update_attributes(params[:flipbk])
     @book.user_id = session[:user_id]
     
-    
     if @book.save
       dir = "#{RAILS_ROOT}/tmp/#{@book.id}/"
       name = "#{@book.user_id}-#{@book.id}-#{@book.name.gsub(/\s+/, "")}"
       Photo.all.each do |p|
-        if p.flipbk_id == @book.id
-          p.flipbk_id = nil
-          p.save
-        end
-
-        
-      end
+      if p.flipbk_id == @book.id
+        p.flipbk_id = nil
+        p.save
+      end  
+    end
+      
       if params[:photos]      
         params[:photos].each do |p|
           photo = Photo.find(p)
@@ -88,9 +88,7 @@ class FlipbksController < ApplicationController
       
       save_to_s3(@book, dir, name)
       
-
       FileUtils.remove_dir(dir,true)
-      
       
       redirect_to(flipbk_path(@book.id))
     else
@@ -103,8 +101,6 @@ class FlipbksController < ApplicationController
   end
 
   def destroy
-    
-
     book = Flipbk.find(params[:id])
     book.photos.each do |p|
       p.flipbk_id = nil
@@ -113,13 +109,7 @@ class FlipbksController < ApplicationController
     redirect_to(:users)
   end
 
-  def index
-    @user = User.find(session[:user_id])
-
-  end
-
   def show
-    
     
     if session[:user_id]
       @user = User.find(session[:user_id])
@@ -127,8 +117,7 @@ class FlipbksController < ApplicationController
     @book = Flipbk.find(params[:id])
     
     if @book.public?
-
-    
+      
     else
       if current_user &&@book.user.id == current_user.id
       else
@@ -167,5 +156,4 @@ class FlipbksController < ApplicationController
     
   end
 
-  
 end

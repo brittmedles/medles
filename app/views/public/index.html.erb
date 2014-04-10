@@ -50,7 +50,7 @@
       </div>
       
       <div id="signup">
-      <%= render :partial => "form" %>
+        <%= render :partial => "form" %>
       </div>
 
       <!-- <div id="signup_button1" class="grid_4 alpha omega prefix_4 suffix_4">
@@ -82,8 +82,16 @@
   </div>
   
   <div id="discover" class="grid_12">
-      <div id="pub_flipbks">
-        
+      <div id="public_fbs">
+        <ul>
+        <% @public_flipbks.each do |f| %>
+          <li class="flipbook">
+            <a href="<%= flipbk_path(f.id) %>">
+              <img src="<%= f.photos.all.first.url %>" width="300" height="300"></img>
+            </a>
+          </li>
+        <% end %>
+        </ul>
       </div>
   </div>
   

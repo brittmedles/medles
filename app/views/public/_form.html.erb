@@ -9,22 +9,25 @@
 
 <div id="signup_all">
   <ul id="signup_form" class="grid_12 alpha omega">
-    <li>
+    <li class="grid_2 push_2">
         <%= f.text_field :name, :placeholder => "Name" %>
     </li>
   
-    <li>
+    <li class="grid_2 push_2">
       <%= f.text_field :email, :placeholder => "Email" %>
     </li>
 
-    <li>
+    <li class="grid_2 push_2">
       <%= f.password_field :password, :placeholder => "Password" %>
     </li>
 
-    <li>
+    <li class="grid_2 push_2">
       <%= f.password_field :password_confirmation, :placeholder => "Confirm" %>
     </li>
-    <%= f.submit "Sign Up", :class => 'ctr_button' %>
+    <div class"clear"></div>
+      <div class="grid_12 alpha omega">
+        <%= f.submit "Sign Up", :class => 'ctr_button' %>
+      </div>
   </ul>
 </div>
 <% end %>

@@ -1,131 +1,34 @@
-//.clearfix:before,
-//.clearfix:after {
-//  content: " ";
-//  display: table;
-//}
-//.clearfix:after {
-//  clear: both;
-//}
-//
-//body{
-//  margin: 0;
-//}
-//
-///* -------------------------- */
-//
-//          
-///* -------------------------- */
-//
-//#top_bar{
-//  background: #3A383D;
-//  color: #7F7E7F;
-//}
-//
-//#home{
-//  float: left;
-//  padding-top: 5px;
-//  margin-left: 10px;
-//}
-//
-//#home a{
-//  color: #FFFFFF;
-//  font-family: 'Droid Sans Mono';
-//  text-decoration: none;
-//}
-//
-//#login_box{
-//  float: right;
-//  padding-top: 5px;
-//  margin-right: 10px;
-//}
-//
-//#login_box a{
-//  color: #FFFFFF;
-//  font-family: Arial, Helvetica, sans-serif;
-//  font-size: 10px;
-//  text-decoration: none;
-//}
-//
-//#social_media{
-//  float: right;
-//  margin: 5px 10px 0 0;
-//  padding: 0;
-//}
-//#social_media li{
-//  display: inline;
-//}
-//#social_media a{
-//  display: inline-block;
-//  width: 24px;
-//  height: 0;
-//  padding-top: 24px;
-//  overflow: hidden;
-//}
-//
-//.facebook_icon {
-//    position: relative;
-//}
-// 
-//.facebook_icon:before {
-//    content: "\f09a"; 
-//    font-family: FontAwesome;
-//    font-style: normal;
-//    font-weight: normal;
-//    text-decoration: none;
-///*--adjust as necessary--*/
-//    color: #FFFFFF;
-//    font-size: 18px;
-//    padding-right: 0.5em;
-//    position: absolute;
-//    top: 2px;
-//    left: 0;
-//}
-//
-//.twitter_icon {
-//    position: relative;
-//}
-// 
-//.twitter_icon:before {
-//    content: "\f099"; 
-//    font-family: FontAwesome;
-//    font-style: normal;
-//    font-weight: normal;
-//    text-decoration: none;
-///*--adjust as necessary--*/
-//    color: #FFFFFF;
-//    font-size: 18px;
-//    padding-right: 0.5em;
-//    position: absolute;
-//    top: 2px;
-//    left: 0;
-//}
-//
-//.tumblr_icon {
-//    position: relative;
-//}
-// 
-//.tumblr_icon:before {
-//    content: "\f173"; 
-//    font-family: FontAwesome;
-//    font-style: normal;
-//    font-weight: normal;
-//    text-decoration: none;
-///*--adjust as necessary--*/
-//    color: #FFFFFF;
-//    font-size: 18px;
-//    padding-right: 0.5em;
-//    position: absolute;
-//    top: 2px;
-//    left: 0;
-//}
-//
-///* -------------------------- */
-//
-//footer {
-//  margin-left: auto;
-//  margin-right: auto;
-//  text-align: center;
-//  font-color: #FFFFFF;
-//  font-size: 10px;
-//  font-family: Arial, Helvetica, sans-serif;
-//}
+/*http://drinchev.github.io/monosocialiconsfont/*/
+
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('MonoSocialIconsFont-1.10.eot');
+    src: url('MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.symbol, a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-decoration: none;
+}
+
+a.symbol:before {
+    content: attr(title);
+    margin-right: 0.3em;
+    font-size: 130%;
+}

@@ -11,6 +11,7 @@
 
 html, body, #container{
   height: 100%;
+  margin: 0 auto;
 }
 
 #container{ 
@@ -236,11 +237,28 @@ html, body, #container{
 ----------------------------------------------------------------------------------------------------*/
 
 #discover{
-  //height: 1620px;
   background: #FFF;
-  height: 1620px;
+  min-height: 1000px;
 }
 
+#public_fbs{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+#public_fbs li{
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 auto;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#public_fbs a{
+  text-decoration: none;
+}
 
 
 /* `Footer

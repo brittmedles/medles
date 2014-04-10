@@ -35,7 +35,7 @@
            Username or password incorrect
           <% end %> -->
           
-          <%= form_for logins_path do |f| %>
+          <%= form_for @user, :url => logins_path, :html => {:method => :get} do |f| %>
 
           <div id="email" class="grid_4 alpha omega prefix_4 suffix_4">
             <%= f.text_field :email, :placeholder => "Email" %>

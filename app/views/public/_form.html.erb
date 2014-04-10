@@ -1,4 +1,4 @@
-<%= form_for @user, :remote => true do |f| %>
+<%= form_for @user do |f| %>
   <!-- <% if @user.errors.any? %>
     <div id="errors">
       <% @user.errors.full_messages.each do |error_msg| %>
@@ -8,32 +8,31 @@
   <% end %> -->
 
 <div id="signup_all">
-  <div id="signup_form" class="grid_12 alpha omega">
-    <div id="signup_name" class="grid_3 alpha">
+  <ul id="signup_form" class="grid_12 alpha omega">
+    <li>
         <%= f.text_field :name, :placeholder => "Name" %>
-    </div>
+    </li>
   
-    <div id="signup_email" class="grid_3">
+    <li>
       <%= f.text_field :email, :placeholder => "Email" %>
-    </div>
+    </li>
 
-    <div id="signup_password" class="grid_3">
+    <li>
       <%= f.password_field :password, :placeholder => "Password" %>
-    </div>
+    </li>
 
-    <div id="signup_pwconfirm" class="grid_3 omega">
+    <li>
       <%= f.password_field :password_confirmation, :placeholder => "Confirm" %>
-    </div>
-  </div>
-
-  <div class="grid_12 alpha omega">    
-    <div id="signup_button2" class="grid_4 alpha omega prefix_4 suffix_4">
-      <%= f.submit "Sign Up", :class => 'ctr_button', :remote => true %>
-    </div>
-  </div>
+    </li>
+    <%= f.submit "Sign Up", :class => 'ctr_button' %>
+  </ul>
 </div>
 <% end %>
-  
+
+
+
+
+
   
 
 

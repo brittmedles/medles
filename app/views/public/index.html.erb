@@ -26,8 +26,8 @@
     
       <div id="links" class="grid_4 omega push_4">
         <% if current_user %>
-          <%= link_to("Profile", user_url(current_user.id)) %> |
           <%= link_to("Log Out", login_path(current_user.id), :method => :delete) %>
+          <%= link_to("Profile", user_url(current_user.id)) %> 
         <% else %>
 
         <%= link_to("Log In", :new_login) %>
@@ -51,9 +51,9 @@
       <%= render :partial => "form" %>
       </div>
 
-      <div id="signup_button1" class="grid_4 alpha omega prefix_4 suffix_4">
-        <%= button_to "Sign Up", new_user_path, :method => :get, :class => "ctr_button" %>
-      </div>
+      <!-- <div id="signup_button1" class="grid_4 alpha omega prefix_4 suffix_4">
+        <%= button_to "Sign Up", :root, :method => :get, :class => "ctr_button" %>
+      </div> -->
   </div>  
       
   <div id="graphic" class="grid_12">
@@ -127,68 +127,4 @@
   
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div id="main" class="clearfix">
-  
-  <div id="main_left">
-    
-    
-    <div id="tagline">
-        <div id="logo">
-          <img src="assets/logo.jpg" alt="flipbook" height="150" width="300">
-        </div>
-        
-    </div>
-  
-    <div id="signup">
-        <div id="hp_form">
-          <% if !current_user %>
-            <%= render :partial => "form" %>
-          <% else %>
-            <p><%= current_user.name %>,<%= link_to("see your flipbooks >", user_url(current_user.id)) %></p>
-          <% end %>
-        </div> 
-    </div>
-  </div>
-  
-  <div id="main_right">
-    <div id="hp_flipbk">
-      <video autoplay loop>
-          <source src="videos/Rolling.mp4" type="video/mp4">
-           Your browser doesn’t support this video. Consider downloading Chrome.
-      </video>
-    </div>
-  </div>
-  
-</div>
-  
-  <div id="midline">
-    <h3>Discover our flipbooks</h3>
-  </div>
-
-  <div id="hp_public_fbs" class="clearfix">
-    <div id="public_fbs">
-
-      <% @public_flipbks.each do |f| %>
-        <li class="flipbook">
-          
-          <a href="<%= flipbk_path(f.id) %>">
-            <img src="<%= f.photos.all.first.url %>" width="212" height="212"></img>
-
-          </a>
-        </li>
-      <% end %>
-    </div>
-  </div> -->
 

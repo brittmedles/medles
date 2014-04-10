@@ -25,47 +25,13 @@
 
 <body>
   
-  <!-- <div id="container"> -->
-    
-    <!-- <div id="top_bar" class="clearfix">
-      <div id="home">
-        <%= link_to("flipbook", :root) %>
-      </div>
-      
-      <div id="login_box">
-        <% if current_user %>
-          <%= link_to("Profile", user_url(current_user.id)) %> |
-          <%= link_to("Log Out", login_path(current_user.id), :method => :delete) %>
-        <% else %>
-  
-        <a href="#"><%= link_to("Sign Up", :new_user) %></a> |  -->
-        <!-- <%= link_to("Log In", :new_login) %>
-  
-        <% end %> -->
-      <!-- </div>
-      
-      <div id="fb-root"></div>
-      
-      <ul id="social_media">
-        <li><a href="#" class="facebook_icon">Facebook</a></li>
-        <li><a href="#" class="twitter_icon">Twitter</a></li>
-        <li><a href="#" class="tumblr_icon">Tumblr</a></li>
-      </ul>
-    </div>
-    
-  </div> -->
-  
+
   <div>
     
     <%= yield %> 
     
   </div>
   
-  <!-- <footer>
-    <p>
-    © 2014 flipbook, Inc. • Proudly built on the Silicon Prairie • Terms of service • Privacy Policy
-    </p>
-  </footer> -->
   
 </body>
 </html>

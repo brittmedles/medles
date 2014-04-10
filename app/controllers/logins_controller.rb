@@ -1,5 +1,7 @@
 class LoginsController < ApplicationController
+  
   def new
+    @user = User.new
   end
   
   def create
@@ -18,4 +20,5 @@ class LoginsController < ApplicationController
     session[:user_id] = nil
     redirect_to(:root)
   end
+  
 end

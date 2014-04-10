@@ -9,8 +9,6 @@ class PublicController < ApplicationController
         @public_flipbks << f
       end
     end
-
-    
   end
 
   def create

@@ -36,11 +36,6 @@ class UsersController < ApplicationController
   
   def new
      @user = User.new
-     
-     respond_to do |format|
-       format.html
-       format.js
-     end
   end
 
   def create
@@ -49,8 +44,7 @@ class UsersController < ApplicationController
      if @user.save
        session[:user_id] = @user.id # <- This is all "auto-login" is. Ha.
       
-       redirect_to(:root)
-
+       redirect_to(user_url(current_user.id))
      else
        render "new"
      end

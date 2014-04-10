@@ -4,18 +4,22 @@
 
 #login_form input[type="text"]{
   width: 295px;
-  height: 55px;
-  font-size: 18px; 
+  height: 55px; 
   margin-top: 15px;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #login_form input[type="password"]{
   width: 295px;
   height: 55px;
-  font-size: 18px;
   margin-top: 15px;
   margin-bottom: 15px;
+  font-size: 18px;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #login_form input[type="submit"]{

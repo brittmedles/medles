@@ -35,18 +35,18 @@
            Username or password incorrect
           <% end %> -->
           
-          <%= form_for @user, :url => logins_path, :html => {:method => :get} do |f| %>
+          <%= form_tag logins_path do |f| %>
 
           <div id="email" class="grid_4 alpha omega prefix_4 suffix_4">
-            <%= f.text_field :email, :placeholder => "Email" %>
+            <%= text_field_tag :email, nil, placeholder: "Email" %>
           </div>
 
           <div id-"password" class="grid_4 alpha omega prefix_4 suffix_4">
-            <%= f.password_field :password, :placeholder => "Password" %>
+            <%= password_field_tag :password, nil, placeholder: "Password" %>
           </div>
           
           <div id="login" class="grid_4 alpha omega prefix_4 suffix_4">
-            <%= f.submit "Log In", :class => 'ctr_button' %>
+            <%= submit_tag "Log In", :class => 'ctr_button' %>
           </div>
           <% end %>
             

@@ -40,19 +40,65 @@
         share what you make
       </div>
       
-      <div id="menu">
+      <div id="fb_menu">
       
-        <%= button_to "Preview flipbook", :flipbks, :method => :get, :class => "ctr_button" %>
+        <!-- <%= button_to "Preview flipbook", :flipbks, :method => :get, :class => "ctr_button" %> -->
         
         <%= button_to "Your flipbooks", user_url(current_user.id), :method => :get, :class => "ctr_button" %>
                     
       </div>
+      
+      <div id="flipbook">
+        <%= render :partial => "form" %>
+      </div>
   </div>
+  
+  <div class="push"></div>
+ 
+  <div id="footer" class="grid_12">
+     <!-- <div id="nav_icon" class="grid_4 alpha"></div> -->
+     
+     <div id="foot_signup">
+       <div id="signup" class="grid_4 alpha prefix_4">
+         <!-- <button type="button" class="ctr_button">Sign Up</button> -->
+       </div>
+     </div>
+   
+     <div id="foot_links" class="grid_4 omega">
+       <div class="foot_buttons">
+         <div id="fb-root"></div>
+         <div id="social_icon3">
+           <a href="#" class="tumblr_icon"></a>
+         </div>
+         <div id="social_icon2">
+           <a href="#" class="twitter_icon"></a>
+         </div>
+         <div id="social_icon1">
+           <a href="#" class="facebook_icon"></a>
+         </div>
+       
+         <div id="flip_icon">
+           <%= link_to :root do %>
+             <%= image_tag "flipbook60.jpg" %>
+           <% end %>
+         </div>
+       </div>
+     </div>
+     
+     <div id="credits" class="grid_12 alpha omega">
+       © 2014 flipbook, Inc. • Proudly built on the Silicon Prairie • Terms of service • Privacy Policy
+     </div>
+   
+ </div>
+      
+      
+      
+      
+      
+      
+</div>
 
-  <div id="make_flipbook">
-    <%= render :partial => "form" %>
-  </div>
-
+  
 
 </body>
 </html>

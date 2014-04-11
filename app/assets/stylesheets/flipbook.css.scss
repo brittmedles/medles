@@ -1,16 +1,40 @@
-#signup_form{
+#flipbook_form{
+  
+}
+
+#fb_menu{
   height: 60px;
+  margin-bottom: 24px;
+}
+
+#flipbook_all{
+  height: 175px;
   background: #2C3E50;
 }
 
-#signup_form li{
+.ctr_button2{
+  display: block;
+  margin: 0 auto;
+  border: none;
+  height: 60px;
+  width: 300px;
+  background: #3498DB;
+  color: #2C3E50;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#flipbook_form li{
   display: inline-block;
   list-style: none;
-  margin-top: 14px;
+  margin-top: 25px;
+  margin-bottom: 10px;
   margin-left: 5px;
 }
 
-#signup_form input[type="text"]{
+#flipbook_form input[type="text"]{
   width: 90%;
   height: 26px;
   font-size: 18px;
@@ -18,12 +42,30 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#signup_form input[type="password"]{
-  width: 90%;
-  height: 26px;
+#flipbook_form label{
   font-size: 18px;
-  color: gray;
+  color: #FFF;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+#insta_photos{
+  background: #FFF;
+}
+
+#photos{
+  width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#photos_new{
+  width: 200px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background: #FFF;
+  float: left;
+  padding-top: 15px;
 }
 
 

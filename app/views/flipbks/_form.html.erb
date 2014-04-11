@@ -1,50 +1,50 @@
-<div id="new_flipbook_form">
-  <ul id="flipbook_fields">
+<div id="flipbook_all">
+  <ul id="flipbook_form" class="grid_12 alpha omega">
     <%= form_for @book do |f| %>
     <%= f.hidden_field :user_id %>
+    
+    <%= f.submit "Save flipbook", :class => "ctr_button2" %>
 
-    <li>
-      <%= f.label :name %>
-      <%= f.text_field :name %>
+    <li class="grid_2 push_2">
+      <%= f.text_field :name, :placeholder => "Name" %>
     </li>
   
-    <li>
-      <%= f.label :description %>
-      <%= f.text_field :description %>
+    <li class="grid_2 push_2">
+      <%= f.text_field :description, :placeholder => "Describe" %>
     </li>
   
-    <li>
-      <%= f.label "Speed (in ms)" %>
+    <li class="grid_2 push_2">
       <% spd = @book.speed || 200 %>
-      <%= f.text_field :speed , :value => spd %>
+      <%= f.text_field :speed , :value => "How fast? (ms)" %>
     </li>
   
-    <li>
-      <%= f.label :public %>
+    <li id="chkbox" class="grid_2 push_2">
+      <%= f.label "Make public?" %>
       <%= f.check_box :public %>
     </li>
   </ul>
   
-    <p>
+  <div id="insta_photos" class="grid_12 alpha omega">
+    <div id="photos">
       <% User.find(session[:user_id]).photos.all.each do |p| %>
-      <div class="photos_new">
-        <label for="<%= p.id %>">
-          <%= image_tag(p.url, height: '100', width: '100') %>
+        <div id="photos_new">
+          <label for="<%= p.id %>">
+            <%= image_tag(p.url, height: '140', width: '140') %>
 
-          <%= check_box_tag('photos[]', p.id, (((p.flipbk_id == @book.id)&& p.flipbk_id != nil)? true : false), :id => "#{p.id}" ) %>
-        
-        <% p.order = p.order || 0 %>
-        <%# text_field_tag "order[]", "#{p.id}-#{p.order}" , :size => 10 %>
+            <%= check_box_tag('photos[]', p.id, (((p.flipbk_id == @book.id)&& p.flipbk_id != nil)? true : false), :id => "#{p.id}" ) %>
 
-        </label>
-      </div>
+            <% p.order = p.order || 0 %>
+            <%# text_field_tag "order[]", "#{p.id}-#{p.order}" , :size => 10 %>
+          </label>
+        </div>
       <% end %>
-    </p>
-  
+    </div>
   </div>
   
-  <%= f.submit "Create flipbook", :class => ".button" %>
 
   <% end %> 
 
 </div>
+
+
+     

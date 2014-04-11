@@ -1,6 +1,5 @@
-#flipbook_form{
-  
-}
+/* `Make a flipbook
+----------------------------------------------------------------------------------------------------*/
 
 #fb_menu{
   height: 60px;
@@ -69,6 +68,72 @@
   float: left;
   padding-top: 15px;
 }
+
+/* `Show flipbook
+----------------------------------------------------------------------------------------------------*/
+
+#nav2{
+  background: #34495E;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+#links2{
+  height: 60px;
+}
+
+#links2 a{
+  float: right;
+  line-height: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin-right: 37px;
+  color: #E74C3C;
+}
+
+#flipbook_all{
+  height: 700px;
+  margin-bottom: 100px;
+}
+
+#fb_show img{
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#settings{
+  float: right;
+  padding: 0;
+}
+
+#settings{
+  margin-bottom: 0px;
+}
+
+#settings li{
+  display: inline-block;
+  margin-left: 0px;
+}
+
+.fb_button{
+  display: block;
+  margin: 0;
+  border: none;
+  height: 60px;
+  width: 100px;
+  background: #3498DB;
+  color: #2C3E50;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#fb_description{
+  margin: auto;
+}
+
 
 
 

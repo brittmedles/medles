@@ -5,7 +5,7 @@
 
 <div id="container" class="container_12">
   
-  <div id="nav" class="grid_12">
+  <div id="nav" class="grid_12 alpha omega">
       <div id="social" class="grid_4 alpha">
           <div id="flip_icon">
             <%= link_to :root do %>
@@ -38,7 +38,7 @@
   </div>
 
   
-  <div id="banner" class="grid_12">
+  <div id="banner" class="grid_12 alpha omega">
       <div id="name" class="center">
         <span>flip</span>book
       </div>
@@ -58,7 +58,7 @@
       </div> -->
   </div>  
       
-  <div id="graphic" class="grid_12">
+  <div id="graphic" class="grid_12 alpha omega">
     
     <div id="backdrop" class="grid_4 alpha push_4"></div>
     
@@ -75,13 +75,13 @@
       
   
   
-  <div id="buffer" class="grid_12">
+  <div id="buffer" class="grid_12 alpha omega">
       <div id="buff_text">
         FLIP THRU
       </div>
   </div>
   
-  <div id="discover" class="grid_12">
+  <div id="discover" class="grid_12 alpha omega">
       <div id="public_fbs">
         <ul>
         <% @public_flipbks.each do |f| %>
@@ -97,34 +97,36 @@
   
   <div class="push"></div>
   
-  <div id="footer" class="grid_12">
+  <div id="footer" class="grid_12 alpha omega">
       <!-- <div id="nav_icon" class="grid_4 alpha"></div> -->
       
       <div id="foot_signup">
+        
+        <div id="foot_links" class="grid_4 push_8">
+          <div class="foot_buttons">
+            <div id="fb-root"></div>
+            <div id="social_icon3">
+              <a href="#" class="tumblr_icon"></a>
+            </div>
+            <div id="social_icon2">
+              <a href="#" class="twitter_icon"></a>
+            </div>
+            <div id="social_icon1">
+              <a href="#" class="facebook_icon"></a>
+            </div>
+        
+            <div id="flip_icon">
+              <%= link_to :root do %>
+                <%= image_tag "flipbook60.jpg" %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        
         <div id="signup" class="grid_4 alpha prefix_4">
           <button type="button" class="ctr_button">Sign Up</button>
         </div>
-      </div>
-    
-      <div id="foot_links" class="grid_4 omega">
-        <div class="foot_buttons">
-          <div id="fb-root"></div>
-          <div id="social_icon3">
-            <a href="#" class="tumblr_icon"></a>
-          </div>
-          <div id="social_icon2">
-            <a href="#" class="twitter_icon"></a>
-          </div>
-          <div id="social_icon1">
-            <a href="#" class="facebook_icon"></a>
-          </div>
-        
-          <div id="flip_icon">
-            <%= link_to :root do %>
-              <%= image_tag "flipbook60.jpg" %>
-            <% end %>
-          </div>
-        </div>
+
       </div>
       
       <div id="credits" class="grid_12 alpha omega">

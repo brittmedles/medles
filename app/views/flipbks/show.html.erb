@@ -1,4 +1,117 @@
+<!DOCTYPE html>
+<html>
 <body>
+
+<div id="container" class="container_12">
+  
+  <div id="nav2" class="grid_12 alpha omega">
+      <div id="social" class="grid_4 alpha">
+          <div id="flip_icon">
+            <%= link_to :root do %>
+              <%= image_tag "flipbook60.jpg" %>
+            <% end %>
+          </div>
+          
+          <div id="avatar">
+            <%= gravatar_tag User.find(session[:user_id]), :size => 60 %>
+          </div>
+          
+          <% if @book.public %>
+            <div id="social_share">
+          
+              <div id="fb-root"></div>
+              <div id="social_icon3">
+                <a href="#" class="tumblr_icon"></a>
+              </div>
+              <div id="social_icon2">
+                <a href="#" class="twitter_icon"></a>
+              </div>
+              <div id="social_icon1">
+                <a href="#" class="facebook_icon"></a>
+              </div>
+              <!-- <a title='circletwitterbird' onclick="return !window.open(this.href, 'Twitter', 'width=640,height=300')" class='symbol popup' href="http://twitter.com/share" ></a>
+
+              <a title="circlefacebook" class="symbol facebook" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')"              href="http://www.facebook.com/sharer/sharer.php?u=<%=request.original_url%>"></a>   
+  
+              <a title='circletumblr' onclick="return !window.open(this.href, 'Tumblr', 'width=640,height=300')" class='symbol popup' href="http://tumblr.com/share" ></a> -->
+            </div>
+          <% end %>
+      </div>
+      
+      <div id="fb_topbar" class"grid_6">
+        <ul id="settings">
+          <% if current_user && current_user.id == @book.user_id %>
+  
+          <li><%= button_to "Edit", "/flipbks/#{@book.id}/edit", :method => :get, :class => "fb_button" %></li>
+
+          <li><%= button_to "Delete", flipbk_path("delete/#{@book.id}"), method: :delete, :class => "fb_button" %></li>
+
+          <li><%= button_to "Back", user_url(current_user.id), :class => "fb_button" %></li>
+
+          <% else %>
+
+          <% end %>
+        </ul>
+      
+        
+      </div>
+    
+      <!-- <div id="links2" class="grid_4 omega push_4">
+        <% if current_user %>
+          <%= link_to("Log Out", login_path(current_user.id), :method => :delete) %>
+          <%= link_to("Profile", user_url(current_user.id)) %> 
+        <% else %>
+
+        <%= link_to("Log In", :new_login) %>
+
+        <% end %>
+      </div> -->
+  </div>
+  
+  <div id="flipbook_sq" class="grid_12 alpha omega">
+    <div id="flipbook_all" class="grid_6 push_3">
+      
+      
+      <div class="grid_12 alpha omega">
+      <div id="name" class="center">
+        <%= @book.name %>
+      </div>
+      
+      <div class="separator"></div>
+      
+      <div id="tagline" class="center">
+        <%= @book.description %>
+      </div>
+      
+      <!-- <div id="fb_menu">
+        
+        <%= button_to "Share flipbook", user_url(current_user.id), :method => :get, :class => "ctr_button" %>
+                    
+      </div> -->
+      
+      <div id="fb_show">
+
+        <%= image_tag(@book.url, height: '450', width: '450') %>
+        
+      </div>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <body>
 
   <div id="main">
   
@@ -43,4 +156,4 @@
     </div>
   
   </div>
-</body>
+</body> -->

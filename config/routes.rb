@@ -10,6 +10,8 @@ Flipbook::Application.routes.draw do
    get 'profile/:id' => 'public#profile', :as => :profile
 
    get '/profile/' => 'public#profile'
+   
+   get '/grid/' => 'public#grid'
 
    get '/oauth/connect' => 'users#connect', :as => :connect
    get '/oauth/callback' => 'users#callback', :as => :callback

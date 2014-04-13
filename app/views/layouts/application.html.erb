@@ -12,14 +12,8 @@
   <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-
-    <script>
-    jQuery(document).ready(function($) {
-      $('a[rel*=facebox]').facebox() 
-    })
-    $.facebox.settings.closeImage = '/assets/closelabel.png'
-    $.facebox.settings.loadingImage = '/assets/loading.gif'
-    </script>
+  
+  <script src="jquery.colorbox-min.js"></script>
 
 </head>
 

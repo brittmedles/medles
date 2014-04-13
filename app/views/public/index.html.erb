@@ -86,6 +86,9 @@
         <ul>
         <% @public_flipbks.each do |f| %>
           <li>
+            
+            
+            
             <a href="<%= flipbk_path(f.id) %>">
               <img src="<%= f.photos.all.first.url %>" width="300" height="300"></img>
             </a>

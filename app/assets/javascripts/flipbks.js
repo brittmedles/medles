@@ -1,3 +1,3 @@
 jQuery(document).ready(function($){
-    $('a.colorbox').colorbox(); 
+    $('a[rel*=colorbox]').colorbox(); 
 });

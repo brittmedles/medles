@@ -3,7 +3,8 @@ class PublicController < ApplicationController
   def index
     @users = User.all
     @user = User.new
-    @public_flipbks =  []
+    @public_flipbks = []
+    
     Flipbk.all.each do |f|
       if f.public
         @public_flipbks << f
@@ -15,8 +16,7 @@ class PublicController < ApplicationController
     @user = User.new(params[:user])
 
     if @user.save
-      session[:user_id] = @user.id # <- This is all "auto-login" is. Ha.
-
+      session[:user_id] = @user.id
       redirect_to(:user)
     else
       render "new"
@@ -30,4 +30,5 @@ class PublicController < ApplicationController
       redirect_to :root
     end
   end
+  
 end

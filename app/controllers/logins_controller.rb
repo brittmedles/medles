@@ -8,10 +8,9 @@ class LoginsController < ApplicationController
     @user = User.find_by_email(params[:email])
     
     if @user && @user.authenticate(params[:password])
-      session[:user_id] = @user.id # <-- That is what a "log in" is.
+      session[:user_id] = @user.id
       redirect_to user_url(@user.id)
     else
-      
       render "new"
     end
   end

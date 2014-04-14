@@ -1,8 +1,0 @@
-<!-- Name is being filled by Instagram username -->
-<h1><%= "#{User.find(session[:user_id]).name}'s Instagram photos." %></h1>
-  
-  <% User.find(session[:user_id]).photos.each do |p| %>
-    <%= image_tag(p.url , height: '62', width: '62') %>
-  <% end %>
-  
-  

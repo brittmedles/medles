@@ -13,7 +13,10 @@
           </div>
           
           <div id="avatar">
+            <% if current_user %>
             <%= gravatar_tag User.find(session[:user_id]), :size => 60 %>
+            <% else %>
+            <% end %>
           </div>
           
           <% if @book.public %>
@@ -82,12 +85,6 @@
       <div id="tagline" class="center">
         <%= @book.description %>
       </div>
-      
-      <!-- <div id="fb_menu">
-        
-        <%= button_to "Share flipbook", user_url(current_user.id), :method => :get, :class => "ctr_button" %>
-                    
-      </div> -->
       
       <div id="fb_show">
 

@@ -11,7 +11,7 @@
               <%= image_tag "flipbook60.jpg" %>
             <% end %>
           </div>
-       
+     
           <div id="fb-root"></div>
           <div id="social_icon1">
             <a href="#" class="facebook_icon"></a>
@@ -21,21 +21,13 @@
           </div>
           <div id="social_icon3">
             <a href="#" class="tumblr_icon"></a>
-          </div>
+          </div>       
       </div>
-    
+  
       <div id="links" class="grid_4 omega push_4">
-        <% if current_user %>
-          <%= link_to("Log Out", login_path(current_user.id), :method => :delete) %>
-          <%= link_to("Profile", user_url(current_user.id)) %> 
-        <% else %>
-
-        <%= link_to("Log In", :new_login) %>
-
-        <% end %>
+          <%= link_to("Log In", :new_login) %>
       </div>
   </div>
-
   
   <div id="banner" class="grid_12 alpha omega">
       <div id="name" class="center">
@@ -49,31 +41,10 @@
       </div>
       
       <div id="signup">
-        <%= render :partial => "form" %>
+        <%= render partial: "form", locals: {user: @user} %>
       </div>
-
-      <!-- <div id="signup_button1" class="grid_4 alpha omega prefix_4 suffix_4">
-        <%= button_to "Sign Up", :root, :method => :get, :class => "ctr_button" %>
-      </div> -->
   </div>  
       
-  <div id="graphic" class="grid_12 alpha omega">
-    
-    <div id="backdrop" class="grid_4 alpha push_4"></div>
-    
-  </div>
-      
-        <!-- <div id="hp_flipbook" class="grid_2 alpha omega prefix_5 suffix_5">
-          <div id="backdrop">
-            <video autoplay loop>
-                <source src="videos/Rolling.mp4" type="video/mp4">
-                 Your browser doesn’t support this video. Consider downloading Chrome!
-            </video>
-          </div>
-        </div> -->
-      
-  
-  
   <div id="buffer" class="grid_12 alpha omega">
       <div id="buff_text">
         FLIP THRU
@@ -97,7 +68,6 @@
   <div class="push"></div>
   
   <div id="footer" class="grid_12 alpha omega">
-      <!-- <div id="nav_icon" class="grid_4 alpha"></div> -->
       
       <div id="foot_signup">
         

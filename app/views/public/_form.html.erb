@@ -1,4 +1,4 @@
-<%= form_for @user do |f| %>
+<%= form_for user do |f| %>
   <!-- <% if @user.errors.any? %>
     <div id="errors">
       <% @user.errors.full_messages.each do |error_msg| %>
@@ -7,29 +7,29 @@
     </div>
   <% end %> -->
 
-<div id="signup_all">
-  <ul id="signup_form" class="grid_12 alpha omega">
-    <li class="grid_2 push_2">
-        <%= f.text_field :name, :placeholder => "Name" %>
-    </li>
+  <div id="signup_all">
+    <ul id="signup_form" class="grid_12 alpha omega">
+      <li class="grid_2 push_2">
+          <%= f.text_field :name, :placeholder => "Name" %>
+      </li>
   
-    <li class="grid_2 push_2">
-      <%= f.text_field :email, :placeholder => "Email" %>
-    </li>
+      <li class="grid_2 push_2">
+        <%= f.text_field :email, :placeholder => "Email" %>
+      </li>
 
-    <li class="grid_2 push_2">
-      <%= f.password_field :password, :placeholder => "Password" %>
-    </li>
+      <li class="grid_2 push_2">
+        <%= f.password_field :password, :placeholder => "Password" %>
+      </li>
 
-    <li class="grid_2 push_2">
-      <%= f.password_field :password_confirmation, :placeholder => "Confirm" %>
-    </li>
+      <li class="grid_2 push_2">
+        <%= f.password_field :password_confirmation, :placeholder => "Confirm" %>
+      </li>
     
-    <div id="signup_button" class="grid_12 alpha omega">
-      <%= f.submit "Sign Up", :class => 'ctr_button' %>
-    </div>
-  </ul>
-</div>
+      <div id="signup_button" class="grid_12 alpha omega">
+        <%= f.submit "Sign Up", :class => 'ctr_button' %>
+      </div>
+    </ul>
+  </div>
 <% end %>
 
 

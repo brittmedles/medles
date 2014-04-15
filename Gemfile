@@ -24,7 +24,7 @@ group :assets do
 # gem 'compass-rails'
 # gem 'compass-960-plugin'
 
-gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails'
@@ -49,7 +49,15 @@ gem 'gravatarify', '~> 3.0.0'
 gem 'instagram'
 gem 'dotenv'
 
-gem 'paperclip'
 gem 'aws-sdk'
 gem 'aws-s3'
 gem 's3'
+
+group :development, :test do
+  gem 'database_cleaner'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  # gem 'capybara-webkit'
+  gem 'launchy'
+end

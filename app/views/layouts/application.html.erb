@@ -24,14 +24,14 @@
                   <%= image_tag "flipbook60.jpg" %>
                 <% end %>
               </div>
-              
+
               <div id="avatar">
-                <%= gravatar_tag User.find(params[:id]), :size => 60 %>
+                <%= gravatar_tag User.find(session[:user_id]), :size => 60 %>
               </div>  
           </div>
     
           <div id="links" class="grid_4 omega push_4">
-              <%= link_to("Log Out", login_path(current_user.id), :method => :delete) %>
+              <%= link_to("Log Out", login_path(session[:user_id]), :method => :delete) %>
               <%= link_to("Profile", user_url(current_user.id)) %> 
           </div>
       </div>

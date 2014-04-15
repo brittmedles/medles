@@ -3,7 +3,8 @@
 <body>
 
 <div id="container" class="container_12">
-  
+
+<% if !current_user %>  
   <div id="nav" class="grid_12 alpha omega">
       <div id="social" class="grid_4 alpha">
           <div id="flip_icon">
@@ -28,6 +29,7 @@
           <%= link_to("Log In", :new_login) %>
       </div>
   </div>
+<% end %>
   
   <div id="banner" class="grid_12 alpha omega">
       <div id="name" class="center">

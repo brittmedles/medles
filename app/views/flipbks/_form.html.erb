@@ -1,6 +1,6 @@
 <div id="flipbook_all">
   <ul id="flipbook_form" class="grid_12 alpha omega">
-    <%= form_for @book do |f| %>
+    <%= form_for book do |f| %>
     <%= f.hidden_field :user_id %>
     
     <%= f.submit "Save flipbook", :class => "ctr_button2" %>

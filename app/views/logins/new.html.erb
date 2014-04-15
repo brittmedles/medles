@@ -4,95 +4,50 @@
   
 <div id="container" class="container_12">
   
-    <div id="login_nav" class="grid_12 alpha omega">
-        <div id="social" class="grid_4 alpha">
-            <div id="flip_icon">
-              <%= link_to :root do %>
-                <%= image_tag "flipbook60.jpg" %>
-              <% end %>
-            </div>
-        </div>
-    </div>
-    
-    <!-- <div id="links" class="grid_4 omega push_4">
-      <% if current_user %>
-        <%= link_to("Profile", user_url(current_user.id)) %> |
-        <%= link_to("Log Out", login_path(current_user.id), :method => :delete) %>
-      <% else %>
-      <% end %>
-    </div> -->
-    
-    <div id="login_banner" class="grid_12 alpha omega">
-      <div id="name_blk" class="grid_4 push_4">
-        <div id="name" class="center">
-          <span>flip</span>book
-        </div>
-  
-        <div class="separator"></div>
+  <div id="login_nav" class="grid_12 alpha omega">
+      <div id="social" class="grid_4 alpha">
+          <div id="flip_icon">
+            <%= link_to :root do %>
+              <%= image_tag "flipbook60.jpg" %>
+            <% end %>
+          </div>
       </div>
-      
-      <div class="clear"></div>
-  
-      <div id="login_form" class="grid_4 push_4">
-        
-          <!-- <% if @user %>
-           Username or password incorrect
-          <% end %> -->
-          
-          <%= form_tag logins_path do |f| %>
+  </div>
 
-          <div id="email">
-            <%= text_field_tag :email, nil, placeholder: "Email" %>
-          </div>
-
-          <div id-"password">
-            <%= password_field_tag :password, nil, placeholder: "Password" %>
-          </div>
-          
-          <div id="login">
-            <%= submit_tag "Log In", :class => 'ctr_button' %>
-          </div>
-          <% end %>
-       
+  <div id="login_banner" class="grid_12 alpha omega">
+    <div id="name_blk" class="grid_4 push_4">
+      <div id="name" class="center">
+        <span>flip</span>book
       </div>
-    </div>
-    
-    <!-- <div id="footer" class="grid_12 alpha omega">
-      
-        <div id="foot_signup">
-        
-          <div id="foot_links" class="grid_4 push_8">
-            <div class="foot_buttons">
-              <div id="fb-root"></div>
-              <div id="social_icon3">
-                <a href="#" class="tumblr_icon"></a>
-              </div>
-              <div id="social_icon2">
-                <a href="#" class="twitter_icon"></a>
-              </div>
-              <div id="social_icon1">
-                <a href="#" class="facebook_icon"></a>
-              </div>
-        
-              <div id="flip_icon">
-                <%= link_to :root do %>
-                  <%= image_tag "flipbook60.jpg" %>
-                <% end %>
-              </div>
-            </div>
-          </div>
-        
-          <div id="signup" class="grid_4 alpha prefix_4">
-            <button type="button" class="ctr_button">Sign Up</button>
-          </div>
 
+      <div class="separator"></div>
+    </div>
+  
+    <div class="clear"></div>
+
+    <div id="login_form" class="grid_4 push_4">
+    
+        <!-- <% if @user %>
+         Username or password incorrect
+        <% end %> -->
+      
+        <%= form_tag logins_path do |f| %>
+
+        <div id="email">
+          <%= text_field_tag :email, nil, placeholder: "Email" %>
+        </div>
+
+        <div id-"password">
+          <%= password_field_tag :password, nil, placeholder: "Password" %>
         </div>
       
-        <div id="credits" class="grid_12 alpha omega">
-          © 2014 flipbook, Inc. • Proudly built on the Silicon Prairie • Terms of service • Privacy Policy
+        <div id="login">
+          <%= submit_tag "Log In", :class => 'ctr_button' %>
         </div>
-    
-    </div> -->
+        <% end %>
+   
+    </div>
+  </div>
 
 </div>
 

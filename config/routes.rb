@@ -1,20 +1,17 @@
 Flipbook::Application.routes.draw do
-   
-   get 'flipbks/:id/addphoto/' => 'photos#add'
-   get '/photos' => 'photos#feed', :as => :feed
+
    resources :users, :flipbks, :logins, :photos
+   
+   get '/oauth/connect' => 'users#connect', :as => :connect
+   get '/oauth/callback' => 'users#callback', :as => :callback
+   
+   get 'profile/:id' => 'public#profile', :as => :profile
    
    get 'flipbks/delete/:id' => 'flipbks#destroy'
    match 'users/:id' => 'users#show'
    
-   get 'profile/:id' => 'public#profile', :as => :profile
-
-   get '/profile/' => 'public#profile'
-   
+   # To visualize grid structure.
    get '/grid/' => 'public#grid'
-
-   get '/oauth/connect' => 'users#connect', :as => :connect
-   get '/oauth/callback' => 'users#callback', :as => :callback
    
    root :to => 'public#index'
 

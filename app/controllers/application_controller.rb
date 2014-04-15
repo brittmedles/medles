@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   
+  include ApplicationHelper
+  
   RAILS_ROOT = "." || RAILS_ROOT
   
   def authorize

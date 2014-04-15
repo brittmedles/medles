@@ -1,8 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   
-  include ApplicationHelper
-  
   RAILS_ROOT = "." || RAILS_ROOT
   
   def authorize
@@ -21,5 +19,10 @@ class ApplicationController < ActionController::Base
   end
   
   helper_method :current_user
+  
+  def destroy
+    session[:user_id] = nil
+    redirect_to(:root)
+  end
   
 end

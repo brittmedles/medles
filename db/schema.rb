@@ -17,15 +17,11 @@ ActiveRecord::Schema.define(:version => 20140328144052) do
     t.integer  "user_id"
     t.string   "name"
     t.text     "description"
-    t.datetime "created_at",           :null => false
-    t.datetime "updated_at",           :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
     t.integer  "speed"
     t.boolean  "public"
     t.string   "url"
-    t.string   "display_file_name"
-    t.string   "display_content_type"
-    t.integer  "display_file_size"
-    t.datetime "display_updated_at"
     t.integer  "order"
   end
 

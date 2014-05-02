@@ -47,13 +47,13 @@ gem 'debugger'
 gem 'gravatarify', '~> 3.0.0'
 
 gem 'instagram'
-gem 'dotenv'
 
 gem 'aws-sdk'
 gem 'aws-s3'
 gem 's3'
 
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'database_cleaner'
   gem 'rspec-rails'
   gem 'capybara'

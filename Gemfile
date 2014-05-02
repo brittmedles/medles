@@ -48,6 +48,8 @@ gem 'gravatarify', '~> 3.0.0'
 
 gem 'instagram'
 
+gem "open-uri-s3"
+
 gem 'aws-sdk'
 gem 'aws-s3'
 gem 's3'

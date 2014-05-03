@@ -12,7 +12,7 @@
   
           <li><%= button_to "Edit", "/flipbks/#{@book.id}/edit", :method => :get, :class => "fb_button" %></li>
 
-          <li><%= button_to "Delete", flipbk_path("delete/#{@book.id}"), method: :delete, :class => "fb_button" %></li>
+          <li><%= button_to "Delete", flipbk_path("#{@book.id}"), method: :delete, :class => "fb_button" %></li>
 
           <% else %>
 

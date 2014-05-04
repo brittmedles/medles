@@ -15,7 +15,10 @@
           </div>
           <div id="social_icon3">
             <a href="#" class="tumblr_icon"></a>
-          </div>       
+          </div>
+          <!-- <div class="login">
+            <%= link_to("Log In", :new_login) %>
+          </div>   -->     
         </div>
       </div>
       <% end %>
@@ -32,12 +35,9 @@
         </div>
 
         <div class="signup">
-          <%= render :partial => "form" %>
+          <%= render partial: "form", locals: {user: @user} %>
         </div>
         
-        <div class="login">
-          <%= link_to("Log In", :new_login) %>
-        </div>
       </div>
     </div>
   </div>

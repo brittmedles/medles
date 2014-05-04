@@ -20,7 +20,7 @@
 	text-align: left;
 }
 
-.simform .submit {
+.simform input[type="submit"] {
 	display: none;
 }
 

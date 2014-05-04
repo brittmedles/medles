@@ -1,14 +1,14 @@
 /* `Banner
 ----------------------------------------------------------------------------------------------------*/
 
-#hp-banner{
+#hp-banner {
   width: 100%;
   height: 90vh;
   background: url("138site.jpg") no-repeat 50% 0;
   background-size: cover;
 }
 
-.hp-overlay{
+.hp-overlay {
   position: fixed;
   width: 100%;
   height: 90vh;
@@ -19,17 +19,42 @@
   background: rgba(2, 72, 84, 0.9);
 }
 
-.navigation{
+.header {
   padding: 20px 20px;
 }
 
+.navigation {
+  height: 65px;
+  width: 100%;
+  background: #FFF;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+	z-index:9999;
+	display: none;
+}
 
-.logo{
+.nav-links {
+  float: right;
+}
+
+.login {
+  padding-top: 20px;
+  padding-right: 40px;
+}
+
+.login a {
+  text-decoration: none;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: rgb(0, 79, 91);
+}
+
+.logo {
   float: left;
   text-indent: -9999px;
   overflow: hidden;
   width: 140px;
-  height: 65px;
+  height: 70px;
   position: relative;
   z-index: 9999;
   background: url("logo.png") no-repeat;
@@ -39,24 +64,24 @@
   transition: all .3s;
 }
 
-.logo a{
+.logo a {
   display: block;
   height: 100%;
 }
 
-.hello-block{
+.hello-block {
   padding: 40px 0px;
   z-index: 2;
 }
 
-.tagline{
+.tagline {
   font: 1.8em 'raleway', sans-serif;
   color: #85eef6;
   font-weight: 100;
   margin: 0 0 26px;
 }
 
-.who-we-are{
+.who-we-are {
   font: 80px/80px 'Roboto', sans-serif;
   color: #85eef6 !important;
   margin: 0 0 26px;
@@ -64,15 +89,17 @@
   font-weight: 700;
 }
 
-.login{
-  padding-top: 15px;
+.who-we-are img {
+  margin-left: .5em;
+  margin-bottom: .2em;
+  height: .5em;
+  width: auto;
+  z-index: 9999;
+  opacity: 0.20;
 }
 
-.login a{
-  text-decoration: none;
-  color: #85eef6;
-  font: 1em 'raleway', sans-serif;
-  font-weight: 100;
+#hp_flipbks {
+  height: 1000px;
 }
 
 

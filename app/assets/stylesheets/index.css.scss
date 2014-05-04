@@ -23,6 +23,8 @@
   padding: 20px 20px;
 }
 
+/* `Navigation */
+
 .navigation {
   height: 65px;
   width: 100%;
@@ -34,20 +36,73 @@
 	display: none;
 }
 
-.nav-links {
+.navigation ul {
   float: right;
+  display: block;
+  list-style-type: none;
 }
 
-.login {
-  padding-top: 20px;
-  padding-right: 40px;
+.navigation li {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.login a {
+.navigation li a {
   text-decoration: none;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: rgb(0, 79, 91);
 }
+ 
+.fa-facebook:before { 
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  color: rgb(0, 79, 91);
+  font-size: 28px;
+  padding-left: 23px;
+  position: relative;
+  top: 5px;
+}
+ 
+.fa-twitter:before { 
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  color: rgb(0, 79, 91);
+  font-size: 28px;
+  padding-left: 18px;
+  position: relative;
+  top: 5px;
+}
+ 
+.fa-tumblr:before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  color: rgb(0, 79, 91);
+  font-size: 28px;
+  padding-left: 20px;
+  position: relative;
+  top: 5px;
+}
+
+.fa-instagram:before { 
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  color: rgb(0, 79, 91);
+  font-size: 28px;
+  padding-left: 20px;
+  position: relative;
+  top: 5px;
+}
+  
+/* `End of navigation */
 
 .logo {
   float: left;

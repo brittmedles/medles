@@ -14,79 +14,84 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
-<!-- Facebook integration. -->
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '{1492301310990221}',
-      status     : true,
-      xfbml      : true
+  <!-- Facebook integration. -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '{1492301310990221}',
+        status     : true,
+        xfbml      : true
+      });
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/all.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- Twitter integration. -->
+  <script>
+    $('.popup').click(function(event) {
+      var width  = 575,
+          height = 400,
+          left   = ($(window).width()  - width)  / 2,
+          top    = ($(window).height() - height) / 2,
+          url    = this.href,
+          opts   = 'status=1' +
+                   ',width='  + width  +
+                   ',height=' + height +
+                   ',top='    + top    +
+                   ',left='   + left;
+
+      window.open(url, 'twitter', opts);
+
+      return false;
     });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/all.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-
-<!-- Twitter integration. -->
-<script>
-  $('.popup').click(function(event) {
-    var width  = 575,
-        height = 400,
-        left   = ($(window).width()  - width)  / 2,
-        top    = ($(window).height() - height) / 2,
-        url    = this.href,
-        opts   = 'status=1' +
-                 ',width='  + width  +
-                 ',height=' + height +
-                 ',top='    + top    +
-                 ',left='   + left;
-
-    window.open(url, 'twitter', opts);
-
-    return false;
-  });
-</script>
+  </script>
 
 </head>
 
 <body>
  
-<% if current_user %>
-   <div id="navbar" class="container_12"> 
-      <div id="nav" class="grid_12 alpha omega">
-          <div id="social" class="grid_4 alpha">
-              <div id="flip_icon">
-                <%= link_to :root do %>
-                  <%= image_tag "flipbook60.jpg" %>
-                <% end %>
-              </div>
-
-              <div id="avatar">
-                <%= gravatar_tag User.find(session[:user_id]), :size => 60 %>
-              </div>  
-          </div>
-    
-          <div id="links" class="grid_4 omega push_4">
-              <%= link_to("Log Out", login_path(session[:user_id]), :method => :delete) %>
-              <%= link_to("Profile", user_url(current_user.id)) %> 
-          </div>
-      </div>
+  <div class="navigation small-12 large-12 columns">
+    <ul>
+      <div id="fb-root"></div>
+      <li>
+        <a href="" class="fa fa-facebook" title="Facebook"></a>
+      </li>
+      <li>
+        <a href="" class="fa fa-twitter" title="Twitter"></a>
+      </li>
+      <li>
+        <a href="" class="fa fa-tumblr" title="Tumblr"></a>
+      </li>
+      <li>
+        <a href="" class="fa fa-instagram" title="Instagram"></a>
+      </li>
+      <li>
+        <%= link_to("About", :new_login) %>
+      </li>
+      <li>
+        <% if !current_user %> 
+          <%= link_to("Log In", :new_login) %>
+        <% else %>
+          <%= link_to("Me", user_url(current_user.id)) %>
+        <% end %>
+      </li>       
+    </ul>
   </div>
-<% end %>
-
-<div>
   
-  <%= yield %> 
+  <div>
   
-</div>
+    <%= yield %> 
+  
+  </div>
 
-<% if current_user %>
+  <!-- <% if current_user %>
   <footer class="container_12">
     <div id="footer" class="grid_12 alpha omega">
       
@@ -119,7 +124,7 @@
         </div>
     </div>  
   </footer>
-<% end %>
+  <% end %> -->
 
 </body> 
 

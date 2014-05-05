@@ -193,9 +193,9 @@
 
 	// submits the form
 	stepsForm.prototype._submit = function() {
-		this.options.onSubmit( this.el );
+    this.options.onSubmit( this.el );
 	}
-
+  
 	// TODO (next version..)
 	// the validation function
 	stepsForm.prototype._validade = function() {

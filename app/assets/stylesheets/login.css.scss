@@ -34,7 +34,7 @@
 .login-form input {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  text-align: center;
+  //text-align: center;
   margin: 20px 20px;
   width: 20em;
   color: #85eef6;
@@ -43,6 +43,14 @@
   border-radius: 4px;
   padding: 25px 20px 25px 20px;
   background: transparent;
+  -webkit-transition: background 1s;
+}
+
+.login-form input:hover {
+  background-color: #024854;
+  opacity: 0.9;
+  border: 1px solid #FFF;
+  //color: #FFF;
 }
 
 ::-webkit-input-placeholder {

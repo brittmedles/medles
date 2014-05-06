@@ -60,6 +60,7 @@
   border-radius: 4px;
   padding: 25px 20px 25px 20px;
   background: transparent;
+  transition: background 1s;
   -webkit-transition: background 1s;
 }
 
@@ -69,6 +70,33 @@
   border: 1px solid #FFF;
   //color: #FFF;
 }
+
+.profile-gallery {
+  margin: 0;
+  padding: 0;
+}
+
+.profile-gallery ul {
+  display: block;
+  list-style-type: none;
+  margin-top: 0;
+  padding: 0;
+}
+
+.profile-gallery li {
+  display: inline-block;
+  padding: 0;
+}
+
+.profile-gallery li img {
+  transition: background 1s;
+  -webkit-transition: background 1s;
+}
+
+//.profile-gallery li img:hover {
+//  opacity: 0.9;
+//}
+
 
 
 

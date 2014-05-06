@@ -3,7 +3,6 @@
   <div id="profile-banner">
     <div class="row full-width">
       <div class="me-overlay"></div>
-      
         <div class="header small-12 large-10 large-offset-2 end columns">
           <strong class="logo"><a href="/">watch us build</a></strong>
         </div>
@@ -27,30 +26,25 @@
               </li>  
             </ul>        
           </div>
-          
         </div>
+     </div> 
+  </div>
       
-      
-      
-      
-      
-      
-      <!-- <div class="profile-flipbks">
-          <div id="fbs_all">
-            <ul>
-              <% @user.flipbks.each do |book| %>
-            <li>
+  <div class="profile-flipbks">
+    <div class="row full-width">
+      <div class="profile-gallery small-12 large-12 columns">
+        <ul>
+          <% @user.flipbks.each do |book| %>
+            <li class="small-12 large-3 columns">
               <% book.delete if book.photos.all.empty? %>
               <%= link_to(image_tag(book.photos.all.first.url, :alt => book.name), flipbk_path(book.id)) if !(book.photos.all.empty?) %>
             </li>
-              <% end %>
-            </ul>
-          </div>
-      </div> -->
-  
-      <div class="push"></div>
-
-     </div> 
+          <% end %>
+        </ul>
+      </div>
+    </div>
   </div>
+
+  <div class="push"></div>
 
 </body>

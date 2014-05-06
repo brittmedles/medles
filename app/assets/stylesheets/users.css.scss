@@ -26,9 +26,8 @@
 }
 
 .me-name {
-  font: 60px/60px 'Roboto', sans-serif;
+  font: 40px/50px 'Roboto', sans-serif;
   color: #85eef6 !important;
-  margin: 0 0 26px;
   font-weight: 400;
   z-index: 2;
 }
@@ -40,6 +39,9 @@
 .btn-menu ul {
   display: block;
   list-style-type: none;
+  margin-top: 0;
+  margin-left: 20px;
+  padding: 0;
 }
 
 .btn-menu li {
@@ -50,7 +52,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   //text-align: center;
-  margin: 20px 20px;
+  margin: 20px 5px;
   width: 20em;
   color: #85eef6;
   text-transform: uppercase;
@@ -61,7 +63,7 @@
   -webkit-transition: background 1s;
 }
 
-.me-button input:hover {
+.btn-menu input:hover {
   background-color: #024854;
   opacity: 0.9;
   border: 1px solid #FFF;

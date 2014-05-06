@@ -1,6 +1,6 @@
 #login-banner {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background: url("138site2bw.jpg") no-repeat 50% 0;
   background-size: cover;
 }
@@ -8,7 +8,7 @@
 .overlay {
   position: fixed;
   width: 100%;
-  height: 80vh;
+  height: 100%;
   top: 0;
   left: 0;
   z-index: 1;
@@ -17,6 +17,7 @@
 }
 
 .pg_header {
+  padding-top: 100px;
   text-align: center;
   font: 60px/60px 'Roboto', sans-serif;
   color: #85eef6 !important;
@@ -27,75 +28,38 @@
 
 .login-form{
   text-align: center;
-  z-index: 9999;
+  z-index: 2;
 }
 
 .login-form input {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: center;
   margin: 20px 20px;
   width: 20em;
   color: #85eef6;
+  text-transform: uppercase;
   border: 1px solid #85eef6;
+  border-radius: 4px;
   padding: 25px 20px 25px 20px;
   background: transparent;
+}
+
+::-webkit-input-placeholder {
+   color: #85eef6;
 }
 
 #login_form input[type="submit"] {
   text-align: center;
 }
 
-
-
-
-
-
-//#login_nav{
-//  background: #FFF;
-//  margin-bottom: 15px;
-//}
-//
-//#name_blk{
-//  width: 500px;
-//  background: #34495E;
-//}
-//
-//#login_all{
-//  display: block;
-//  margin: 0 auto;
-//}
-//
-//#login_form{
-//  background: #34495E;
-//  height: 350px;
-//  width: 500px;
-//}
-//
-//#login_form input[type="text"]{
-//  width: 295px;
-//  height: 55px; 
-//  display: block;
-//  margin: 0 auto;
-//  margin-top: 15px;
-//  margin-bottom: 15px;
-//  font-size: 18px;
-//  color: gray;
-//  font-family: Arial, Helvetica, sans-serif;
-//  padding-left: 5px;
-//}
-//
-//#login_form input[type="password"]{
-//  width: 295px;
-//  height: 55px;
-//  display: block;
-//  margin: 0 auto;
-//  margin-top: 15px;
-//  margin-bottom: 15px;
-//  font-size: 18px;
-//  color: gray;
-//  font-family: Arial, Helvetica, sans-serif;
-//  padding-left: 5px;
-//}
-//
-//#login_form input[type="submit"]{
-//  margin-top: 15px;
-//  margin-bottom: 15px;
-//}
+#login-footer {
+  //border-top: 1px solid #85eef6;
+  margin: 0;
+  padding-top: 12px;
+  text-align: center;
+  color: #024854;
+  font: 60px/60px 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 8em;
+}

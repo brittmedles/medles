@@ -14,7 +14,7 @@
   font-weight: 100;
 	position: relative;
 	padding: .6em 0;
-	max-width: 725px;
+	max-width: 550px;
 	width: 100%;
 	text-align: left;
 }
@@ -35,13 +35,14 @@
 
 .simform ol:before {
 	content: '';
-	background-color: #85eef6;
-  opacity: 0.10;
+  border: 1px solid #85eef6;
+	/*background-color: #85eef6;
+  opacity: .25;*/
 	position: absolute;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	height: 2.35em;
+	height: 2.40em;
   -moz-border-radius: 0px;
   -webkit-border-radius: 4px 4px 0px 0px;
   border-radius: 4px 4px 0px 0px;
@@ -190,9 +191,18 @@
 	background: #85eef6;
 	-webkit-transition: width 0.4s ease-in-out;
 	transition: width 0.4s ease-in-out;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .simform .progress::before {
+  border-left: 1px solid #85eef6;
+  border-right: 1px solid #85eef6;
+  border-bottom: 1px solid #85eef6;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
 	position: absolute;
 	top: auto;
 	width: 100%;
@@ -325,14 +335,14 @@ input[type=text]::-ms-clear {
 }
 
 /* Adjust form for smaller screens */
-@media screen and (max-width: 44.75em) {
-	.simform {
-		font-size: 1.8em;
-	}
+/*@media screen and (max-width: 44.75em) {
+  .simform {
+    font-size: 1.8em;
+  }
 }
 
 @media screen and (max-width: 33.5625em) {
-	.simform {
-		font-size: 1.2em;
-	}
-}
+  .simform {
+    font-size: 1.2em;
+  }
+}*/

@@ -51,12 +51,40 @@
   <div class="hp-flipbks">
     <div class="row full-width">
       <% @public_flipbks.each do |f| %>
-        <div class="hp-gallery small-12 large-3 end columns">
-          <a href="<%= flipbk_path(f.id) %>"><img src="<%= f.photos.all.first.url %>" width="100%" height="100%"></img></a>
+        <div class="wrap small-12 large-3 end columns">
+          <% user = User.find(f.user_id) %>
+          <a href="#" class="icon-play"</a>
+          <a href="<%= flipbk_path(f.id) %>" class="user-name"><%= user.name %></a>
+          <a href="<%= flipbk_path(f.id) %>" class="book-name"><%= f.name %></a>
+          <a href="<%= flipbk_path(f.id) %>"><img src="<%= f.photos.all.first.url %>" width="100%" height="100%" class="gallery-img"></img></a>
+          <div class="gallery-overlay"></div>
         </div>
       <% end %>
     </div>
   </div> 
+  
+  <!-- <div id="effect-1" class="effects clearfix">
+    <% @public_flipbks.each do |f| %>
+      <div class="img small-12 large-3 end columns">
+          <a href="<%= flipbk_path(f.id) %>"><img src="<%= f.photos.all.first.url %>" width="100%" height="100%"></img></a>
+          <div class="overlay hidden">
+              <a href="#" class="icon-play"</a>
+              <a href="<%= flipbk_path(f.id) %>" class="book-name"><%= f.name %></a>
+              <a class="icon-close hidden"</a>
+          </div>
+      </div>
+    <% end %>
+  </div> -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   <div class="push"></div>
 

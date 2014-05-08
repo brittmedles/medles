@@ -1,0 +1,246 @@
+#flipbk-banner {
+  width: 100%;
+  height: 300px;
+}
+
+.flipbk-overlay {
+  position: fixed;
+  width: 100%;
+  height: 300px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.9;
+  background: #024854;
+}
+
+.flipbk-form {
+  height: 150px;
+  background: #85eef6;
+  margin: 0;
+  padding: 35px 0;
+  list-style-type: none;
+}
+
+.flipbk-form input {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 0px 5px;
+  width: 20em;
+  color: #85eef6;
+  text-transform: uppercase;
+  border: 1px solid #024854;
+  border-radius: 4px;
+  padding: 25px 20px 25px 20px;
+  background: #024854;
+  opacity: 0.9;
+  -webkit-transition: background 1s;
+  z-index: 5;
+}
+
+.flipbk-form input:hover {
+  background-color: #024854;
+  opacity: 1;
+  border: 1px solid #FFF;
+}
+
+::-webkit-input-placeholder {
+   color: #85eef6;
+}
+
+.checkbox {
+  display: inline-block;
+  width: 100%;
+  margin: 23px 0;
+  color: #024854;
+}
+
+.checkbox input[type="checkbox"]{
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #024854;;
+  vertical-align: middle;
+  -webkit-transition: none;
+  border: none;
+}
+
+.checkbox input[type="checkbox"]:checked{
+  background: #FFF;
+}
+
+.checkbox label{
+  margin-left: 10px;
+  color: #024854;
+  line-height: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///* `Make a flipbook
+//----------------------------------------------------------------------------------------------------*/
+//
+//#fb_menu{
+//  height: 60px;
+//  margin-bottom: 24px;
+//}
+//
+//#flipbook_all{
+//  height: 175px;
+//  background: #E74C3C;
+//}
+//
+//.ctr_button2{
+//  display: block;
+//  margin: 0 auto;
+//  border: none;
+//  height: 60px;
+//  width: 300px;
+//  background: #3498DB;
+//  color: #2C3E50;
+//  font-family: Arial, Helvetica, sans-serif;
+//  font-weight: bold;
+//  font-size: 24px;
+//  cursor: pointer;
+//}
+//
+//#flipbook_form li{
+//  display: inline-block;
+//  list-style: none;
+//  margin-top: 25px;
+//  margin-bottom: 10px;
+//  margin-left: 5px;
+//}
+//
+//#flipbook_form input[type="text"]{
+//  border: none;
+//  width: 90%;
+//  height: 30px;
+//  font-size: 18px;
+//  color: gray;
+//  font-family: Arial, Helvetica, sans-serif;
+//  padding-left: 5px;
+//}
+//
+//#flipbook_form label{
+//  font-size: 18px;
+//  color: #FFF;
+//  font-family: Arial, Helvetica, sans-serif;
+//}
+//
+//#insta_photos{
+//  background: #FFF;
+//}
+//
+//#photos{
+//  width: 1400px;
+//  margin-right: auto;
+//  margin-left: auto;
+//}
+//
+//#photos_new{
+//  width: 200px;
+//  margin: 0 auto;
+//  padding: 0;
+//  text-align: center;
+//  background: #FFF;
+//  float: left;
+//  padding-top: 15px;
+//}
+//
+///* `Show flipbook
+//----------------------------------------------------------------------------------------------------*/
+//
+//#nav2{
+//  background: #34495E;
+//  height: 60px;
+//  margin-bottom: 15px;
+//}
+//
+//#links2{
+//  height: 60px;
+//}
+//
+//#links2 a{
+//  float: right;
+//  line-height: 60px;
+//  font-family: Arial, Helvetica, sans-serif;
+//  text-decoration: none;
+//  margin-right: 37px;
+//  color: #E74C3C;
+//}
+//
+//#flipbook_back{
+//  height: 700px;
+//  margin-bottom: 100px;
+//  background: #E74C3C;
+//}
+//
+//#flipbook_form{
+//  height: 150px;
+//}
+//
+//#fb_show img{
+//  display: block;
+//  margin: 0 auto;
+//  margin-top: 20px;
+//}
+//
+//#settings{
+//  float: right;
+//  padding: 0;
+//}
+//
+//#settings{
+//  margin-bottom: 0px;
+//}
+//
+//#settings li{
+//  display: inline-block;
+//  margin-left: 0px;
+//}
+//
+//.fb_button{
+//  display: block;
+//  margin: 0;
+//  border: none;
+//  height: 60px;
+//  width: 100px;
+//  background: #3498DB;
+//  color: #2C3E50;
+//  font-family: Arial, Helvetica, sans-serif;
+//  font-weight: bold;
+//  font-size: 24px;
+//  cursor: pointer;
+//}
+//
+//#fb_description{
+//  margin: auto;
+//}
+
+
+
+
+
+

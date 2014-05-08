@@ -2,11 +2,11 @@
 	font-weight: normal;
 	font-style: normal;
 	font-family: 'icomoon';
-	src:url('../form/icomoon/icomoon.eot?-9heso');
-	src:url('../form/icomoon/icomoon.eot?#iefix-9heso') format('embedded-opentype'),
-		url('../form/icomoon/icomoon.woff?-9heso') format('woff'),
-		url('../form/icomoon/icomoon.ttf?-9heso') format('truetype'),
-		url('../form/icomoon/icomoon.svg?-9heso#icomoon') format('svg');
+	src:url('../icomoon/icomoon.eot?-9heso');
+	src:url('../icomoon/icomoon.eot?#iefix-9heso') format('embedded-opentype'),
+		url('../icomoon/icomoon.woff?-9heso') format('woff'),
+		url('../icomoon/icomoon.ttf?-9heso') format('truetype'),
+		url('../icomoon/icomoon.svg?-9heso#icomoon') format('svg');
 }
 
 .simform {
@@ -165,7 +165,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	content: "\e600";
+	content: "\e601";
 	text-transform: none;
 	font-weight: normal;
 	font-style: normal;

@@ -15,18 +15,22 @@
 }
 
 .flipbk-form {
-  height: 150px;
+  height: 250px;
   background: #85eef6;
   margin: 0;
-  padding: 35px 0;
+  padding: 10px 0;
   list-style-type: none;
+}
+
+.flipbk-form li {
+  padding: 20px 0;
 }
 
 .flipbk-form input {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   margin: 0px 5px;
-  width: 20em;
+  width: 90%;
   color: #85eef6;
   text-transform: uppercase;
   border: 1px solid #024854;

@@ -163,16 +163,14 @@
   content: "\e605";
 }
 
-/* `Gallery event */
+/* `Gallery */
 
-.effects .img {
-  margin: 0;
-  padding: 5px 5px;
+.wrap {
   background: #85eef6;
-  position: relative;
+  padding: 5px 5px;
 }
 
-.effects .img img {
+.wrap img {
   display: block;
   margin: 0;
   padding: 0;
@@ -180,30 +178,22 @@
   height: auto;
 }
 
-#effect-1 .overlay {
+.gallery-overlay {
   position: absolute;
-  display: block;
-  bottom: 0;
+  top: 0;
   left: 0;
-  right: 0;
   background: rgba(2, 72, 84, 0.9);
   width: 100%;
   height: 100%;
   overflow: hidden;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-#effect-1 .overlay.hidden {
+  z-index: 2;
   display: none;
+  border: 15px solid #85eef6;
 }
 
 .icon-play {
   text-decoration: none;
-  display: block;
+  display: none;
   position: absolute;
   left: 0;
   right: 0;
@@ -220,6 +210,11 @@
   font-size: 64px;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
+  z-index: 5;
+}
+
+.icon-play:before {
+  content: "\e600";
 }
 
 .book-name {
@@ -234,54 +229,6 @@
   font: 20px/20px 'Roboto', sans-serif;
   color: #85eef6;
 }
-
-.icon-play:before {
-  content: "\e600";
-}
-
-#effect-1 .img {
-  overflow: hidden;
-}
-
-#effect-1 .img.hover .overlay {
-  height: 100%;
-}
-
-.overlay {
-  z-index: 10;
-}
-
-.icon-close {
-  text-decoration: none;
-  display: block;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 20;
-  margin: 0 auto;
-  text-align: center;
-  color: #85eef6;
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  font-size: 20px;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  cursor: pointer;
-}
-
-.icon-close:before {
-  content: "\e606";
-}
-
-.icon-close.hidden {
-  display: none;
-}
-
-
 
 
 

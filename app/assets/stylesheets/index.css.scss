@@ -89,6 +89,91 @@
   background: #85eef6;
 }
 
+/* `Gallery */
+
+.wrap {
+  background: #85eef6;
+  padding: 5px 5px;
+}
+
+.wrap img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(2, 72, 84, 0.9);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+  display: none;
+  border: 15px solid #85eef6;
+}
+
+.icon-play {
+  text-decoration: none;
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 45%;
+  margin: 0 auto;
+  text-align: center;
+  color: #85eef6;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 64px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  z-index: 5;
+}
+
+.icon-play:before {
+  content: "\e600";
+}
+
+.user-name {
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 35%;
+  margin: 0 auto;
+  text-align: center;
+  font: 20px/20px 'raleway', sans-serif;
+  font-weight: 200;
+  color: #85eef6;
+  z-index: 5;
+  display: none;
+}
+
+.book-name {
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25%;
+  margin: 0 auto;
+  text-align: center;
+  font: 28px/28px 'Roboto', sans-serif;
+  color: #85eef6;
+  z-index: 5;
+  display: none;
+}
+
 
 
 

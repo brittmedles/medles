@@ -31,17 +31,19 @@
           
      </div> 
   </div>
-      
-  <div class="profile-flipbks">
+  
+  <div class="hp-flipbks">
     <div class="row full-width">
-          <% @user.flipbks.each do |book| %>
-            <div class="profile-gallery small-12 large-3 end columns">
-              <% book.delete if book.photos.all.empty? %>
-              <%= link_to(image_tag(book.photos.all.first.url, :alt => book.name, :class => "gallery-img"), flipbk_path(book.id)) if !(book.photos.all.empty?) %>
-            </div>
-          <% end %>
-       
-     
+      <% @user.flipbks.each do |book| %>
+        <div class="wrap2 small-12 large-3 end columns">
+          <a href="#" class="icon-play"</a>
+          <a href="" class="user-name">You</a>
+          <a href="<%= flipbk_path(book.id) %>" class="book-name"><%= book.name %></a>
+          <% book.delete if book.photos.all.empty? %>
+          <%= link_to(image_tag(book.photos.all.first.url, :alt => book.name, :class => "gallery-img"), flipbk_path(book.id)) if !(book.photos.all.empty?) %>
+          <div class="gallery-overlay2"></div>
+        </div>
+      <% end %>
     </div>
   </div>
 

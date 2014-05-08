@@ -73,13 +73,13 @@
         <a href="" class="icon-instagram" title="Instagram"></a>
       </li>
       <li>
-        <%= link_to("About", :new_login) %>
+        <%= link_to("Us", :new_login) %>
       </li>
       <li>
         <% if !current_user %> 
           <%= link_to("Log In", :new_login) %>
         <% else %>
-          <%= link_to("Me", user_url(current_user.id)) %>
+          <%= link_to("You", user_url(current_user.id)) %>
         <% end %>
       </li>       
     </ul>

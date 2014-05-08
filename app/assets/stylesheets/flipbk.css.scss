@@ -66,8 +66,23 @@
   border: none;
 }
 
-.checkbox input[type="checkbox"]:checked{
-  background: #FFF;
+.checkbox input[type="checkbox"]:checked:before {
+  display: block;
+  position: absolute;
+  padding-top: 3px;
+  padding-left: 3px;
+  font-family: 'icomoon';
+  content: "\e606";
+  text-align: center;
+  color: #85eef6;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 18px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 
 .checkbox label{

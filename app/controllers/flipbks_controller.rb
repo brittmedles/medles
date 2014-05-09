@@ -18,12 +18,8 @@ class FlipbksController < ApplicationController
     if @book.save
       dir = "#{RAILS_ROOT}/tmp/#{@book.id}/"
       name = "#{@book.user_id}-#{@book.id}-#{@book.name.gsub(/\s+/, "")}"
-      
-      logger.debug "HELLOOOOOOOOOOOO"
   
       @book.photos.each do |photo| 
-        
-        logger.debug "\n\n-------------------\n#{photo.url}\n------------------\n\n"
         
         Dir.mkdir(dir) unless File.exists?(dir)
         open("#{dir}image#{photo.order}#{photo.id}.png", 'wb') do |file|

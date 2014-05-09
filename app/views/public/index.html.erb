@@ -29,7 +29,7 @@
       </div>
       
       <div class="pitch small-12 large-10 large-offset-2 columns">
-        Start a flipbook.<br> 
+        Start a buildbook.<br> 
         Add new photos via Instagram.<br> 
         Let us watch you build.<br>
         And, please, watch us build too.<br>
@@ -53,7 +53,7 @@
       <% @public_flipbks.each do |f| %>
         <div class="wrap small-12 large-3 end columns">
           <% user = User.find(f.user_id) %>
-          <a href="#" class="icon-play"</a>
+          <a href="<%= flipbk_path(f.id) %>" class="icon-play"</a>
           <a href="<%= flipbk_path(f.id) %>" class="user-name"><%= user.name %></a>
           <a href="<%= flipbk_path(f.id) %>" class="book-name"><%= f.name %></a>
           <a href="<%= flipbk_path(f.id) %>"><img src="<%= f.photos.all.first.url %>" width="100%" height="100%" class="gallery-img"></img></a>

@@ -1,43 +1,75 @@
-<div id="flipbook_all">
-  <%= form_for book do |f| %>
+<div id="new-flipbk">
+  <%= form_for book, :html => {:id => "new-flipbk-form"} do |f| %>
     <%= f.hidden_field :user_id %>
-    <%= f.submit "Save flipbook", :class => "ctr_button2" %>
     
-    <ul id="flipbook_form" class="grid_12 alpha omega">
-      <li class="grid_2 push_2">
-        <%= f.text_field :name, :placeholder => "Name" %>
-      </li>
+  <div class="row full-width">
+    <ul class="flipbk-formA">
+      <div class="small-12 large-12 columns">
+        <li class="small-12 large-4 columns">
+          <%= f.text_field :name, :placeholder => "Name" %>
+          <!-- <a href="" class="icon-arrow" title="Arrow"></a> -->
+        </li>
 
-      <li class="grid_2 push_2">
-        <%= f.text_field :description, :placeholder => "Describe" %>
-      </li>
+        <li class="small-12 large-4 columns">
+          <%= f.text_field :description, :placeholder => "Describe" %>
+          <!-- <a href="" class="icon-arrow" title="Arrow"></a> -->
+        </li>
 
-      <li class="grid_2 push_2">
-        <% spd = @book.speed || 200 %>
-        <%= f.text_field :speed , :placeholder => "How fast? (ms)" %>
-      </li>
-
-      <li id="chkbox" class="grid_2 push_2">
-        <%= f.label "Make public?" %>
-        <%= f.check_box :public %>
-      </li>
+        <li class="small-12 large-4 columns">
+          <% spd = @book.speed || 200 %>
+          <%= f.text_field :speed , :placeholder => "How fast (ms)? 200?" %>
+          <!-- <a href="" class="icon-arrow" title="Arrow"></a> -->
+        </li>
+      </div>
     </ul>
+  </div>
   
-    <div id="insta_photos" class="grid_12 alpha omega">
-      <div id="photos">
-        <% User.find(session[:user_id]).photos.all.each do |p| %>
-          <div id="photos_new">
-            <label for="<%= p.id %>">
-              <%= image_tag(p.url, height: '140', width: '140') %>
+  <div class="row full-width">
+    <div class="photo-head small-12 large-12 columns">
+      <span>Choose some photos to start. Add more later.</span>
+    </div>
+  </div>
+  
+  <div class="flipbk-photos">
+    <div class="row full-width">
+      <% User.find(session[:user_id]).photos.all.each do |p| %>
+        <div class="wrap3 small-12 large-2 end columns">
+         <label for="<%= p.id %>"><%= image_tag((p.url), :class => "insta-photo") %></label>
 
-              <%= check_box_tag('photos[]', p.id, (((p.flipbk_id == @book.id)&& p.flipbk_id != nil)? true : false), :id => "#{p.id}" ) %>
-
-              <% p.order = p.order || 0 %>
-            
-            </label>
-          </div>
-        <% end %>
+         <%= check_box_tag('photos[]', p.id, (((p.flipbk_id == @book.id)&& p.flipbk_id != nil)? true : false), :class => "photo-chk", :style => "visibility: hidden;" ) %>
+         
+         <% p.order = p.order || 0 %>
+         
+        <div class="photo-overlay"></div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  
+  <div class="flipbk-formB">
+    <div class="row full-width">
+      <div class="checkbox small-12 large-12 columns">
+        <%= f.check_box :public %>
+        <%= f.label "Let us watch you build?" %>
       </div>
     </div>
+  
+    <div class="row full-width">
+      <div class="small-12 large-12 columns">
+        <%= f.submit "Save Buildbook", :class => "me-button" %>
+      </div>
+    </div>
+  </div>
+  
   <% end %> 
 </div>
+
+
+
+
+
+
+
+
+
+

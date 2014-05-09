@@ -80,6 +80,7 @@
           <%= link_to("Log In", :new_login) %>
         <% else %>
           <%= link_to("You", user_url(current_user.id)) %>
+          <%= link_to("Log Out", login_path(current_user.id), :method => :delete) %>
         <% end %>
       </li>       
     </ul>

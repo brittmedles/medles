@@ -1,46 +1,53 @@
 <body>
-
-<div id="container" class="container_12">
   
-  <div id="nav2" class="grid_12 alpha omega">
+  <div id="flipbk-banner">
+    <div class="row full-width"> 
+      <div class="header small-12 large-1 large-offset-2 end columns">
+        <strong class="logo"><a href="/">watch us build</a></strong>
+      </div>
+      
+      <div class="fb-name small-12 large-6 end columns">
+        <span><%= @book.name %></span>
+      </div>
+    </div> 
+      
+    <div class="row full-width">
+      <div class="flipbk small-12 large-6 large-offset-3 end columns">
+        <%= image_tag(@book.url) %>
+      </div>  
+    </div>
   
-      <div id="fb_topbar" class"grid_6">
-        <ul id="settings">
+    <div class="row full-width">
+      <div class="fb-menu small-12 large-6 large-offset-3 end columns">
+        <ul>
           <% if current_user && current_user.id == @book.user_id %>
-  
-          <li><%= button_to "Edit", "/flipbks/#{@book.id}/edit", :method => :get, :class => "fb_button" %></li>
 
-          <li><%= button_to "Delete", flipbk_path("#{@book.id}"), method: :delete, :class => "fb_button" %></li>
+          <li><%= button_to "Edit", "/flipbks/#{@book.id}/edit", :method => :get, :class => "fb-button" %></li>
+
+          <li><%= button_to "Delete", flipbk_path("#{@book.id}"), :method => :delete, :class => "fb-button" %></li>
 
           <% else %>
 
           <% end %>
         </ul>
       </div>
+    </div> 
   </div>
   
-  <div id="flipbook_sq" class="grid_12 alpha omega">
-    <div id="flipbook_back" class="grid_6 push_3">
-      
-      
-      <div class="grid_12 alpha omega">
-      <div id="name" class="center">
-        <%= @book.name %>
-      </div>
-      
-      <div class="separator"></div>
-      
-      <div id="tagline" class="center">
-        <%= @book.description %>
-      </div>
-      
-      <div id="fb_show">
+  <div class="flipbk-overlay"></div>
+  
+  <% if @book.public %>
+  <div id="social_media_share">
+    <a href="" class="icon-facebook" title="Facebook"></a>
+    <a href="http://twitter.com/share" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=300')" class="icon-twitter" title="twitter"></a>
 
-        <%= image_tag(@book.url, height: '450', width: '450') %>
-        
-      </div>
+    <a title="circlefacebook" class="symbol facebook" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')" href="http://www.facebook.com/sharer/sharer.php?u=<%=request.original_url%>"></a>   
+
+    <a title='circletumblr' onclick="return !window.open(this.href, 'Tumblr', 'width=640,height=300')" class='symbol popup' href="http://tumblr.com/share" ></a>
   </div>
-
-</div>
+  <% end %>
 
 </body>
+
+
+      

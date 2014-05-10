@@ -242,6 +242,126 @@
   //color: #FFF;
 }
 
+#flipbk-footer {
+  height: 150px;
+  background: #85eef6;
+  margin: 0;
+  padding-top: 11px;
+  text-align: center;
+  color: #024854;
+  font-weight: 700;
+}
+
+.footer {
+  padding: 0;
+}
+
+.social-share ul {
+  list-style-type: none;
+  text-align: center;
+  background: #85eef6;
+  padding-left: 0;
+}
+
+.social-share li {
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+/* `Flipbk share icons */
+
+.social-share .icon-facebook {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  top: 5px;
+  padding-left: 23px;
+  text-align: center;
+  color: rgb(0, 79, 91);
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 60px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-facebook:before {
+  content: "\e602";
+}
+ 
+.social-share .icon-twitter {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  top: 5px;
+  padding-left: 23px;
+  text-align: center;
+  color: rgb(0, 79, 91);
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 60px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-twitter:before {
+  content: "\e603";
+}
+ 
+.social-share .icon-tumblr {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  top: 5px;
+  padding-left: 23px;
+  text-align: center;
+  color: rgb(0, 79, 91);
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 60px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-tumblr:before {
+  content: "\e604";
+}
+
+.social-share .icon-instagram {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  top: 5px;
+  padding-left: 23px;
+  text-align: center;
+  color: rgb(0, 79, 91);
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 60px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-instagram:before {
+  content: "\e605";
+}
+
 
 
 

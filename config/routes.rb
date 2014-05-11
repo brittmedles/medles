@@ -9,9 +9,8 @@ Flipbook::Application.routes.draw do
    
    get 'flipbks/delete/:id' => 'flipbks#destroy'
    match 'users/:id' => 'users#show'
-   
-   # To visualize grid structure.
-   get '/grid/' => 'public#grid'
+  
+   get '/us' => 'public#us'
    
    root :to => 'public#index'
 

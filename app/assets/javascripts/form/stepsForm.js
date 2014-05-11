@@ -21,8 +21,8 @@
 		},
 		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
 		support = { transitions : Modernizr.csstransitions };
-
-	function extend( a, b ) {
+  
+  function extend( a, b ) {
 		for( var key in b ) { 
 			if( b.hasOwnProperty( key ) ) {
 				a[key] = b[key];

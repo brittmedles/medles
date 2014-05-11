@@ -1,36 +1,36 @@
-<!DOCTYPE html>
-<html>
 <body>
-
-<div id="container" class="container_12">
   
-  <div id="profile_banner" class="grid_12 alpha omega">
-      <div id="name" class="center">
-        <%= current_user.name %>
-      </div>
-      
-      <div class="separator"></div>
-      
-      <div id="tagline" class="center">
-        share what you make
-      </div>
-      
-      <div id="fb_menu">
-      
-        <!-- <%= button_to "Preview flipbook", :flipbks, :method => :get, :class => "ctr_button" %> -->
+  <div id="new-flipbk-banner">
+    <div class="row full-width">
+      <div class="new-flipbk-overlay"></div>
         
-        <%= button_to "Your flipbooks", user_url(current_user.id), :method => :get, :class => "ctr_button" %>
-                    
+      <div class="header small-12 large-10 large-offset-2 end columns">
+        <strong class="logo"><a href="/">watch us build</a></strong>
       </div>
       
-      <div id="flipbook">
-        <%= render partial: "form", locals: {book: @book} %>
+      <div class="row full-width">
+        <div class="avatar desaturate small-12 large-1 large-offset-2 columns">
+          <%= gravatar_tag @user, :size => 150 %>
+        </div>
+        
+        <div class="me-name small-12 large-9 columns">
+          <span>Start a new buildbook.</span>
+        </div>
+        
+        <div class="btn-menu small-12 large-9 columns">
+          <ul>
+            <li>
+              <%= button_to "See Your buildbooks", user_url(current_user.id), :method => :get, :class => "me-button" %>
+            </li>
+          </ul>        
+        </div>
       </div>
+          
+     </div> 
   </div>
   
+  <%= render partial: "form", locals: {book: @book} %>
+  
   <div class="push"></div>
-        
-</div>
 
 </body>
-</html>

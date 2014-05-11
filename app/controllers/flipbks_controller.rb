@@ -55,6 +55,7 @@ class FlipbksController < ApplicationController
   end
   
   def edit
+    @user = User.find(session[:user_id])
     @book = Flipbk.find(params[:id])
   end
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:og="http://ogp.me/ns#">
 
 <script src="http://platform.tumblr.com/v1/share.js"></script>
 
@@ -52,7 +52,7 @@
       return false;
     });
   </script>
-
+    
 </head>
 
 <body>
@@ -73,7 +73,7 @@
         <a href="" class="icon-tumblr" title="Tumblr"></a>
       </li> -->
       <li>
-        <%= link_to("Us", :new_login) %>
+        <%= link_to("Us", :us) %>
       </li>
       <li>
         <% if !current_user %> 

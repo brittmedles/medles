@@ -1,3 +1,20 @@
+<head>
+  <!-- Twitter -->
+  <meta name="twitter:card" content="photo">
+  <meta name="twitter:site" content="@watchusbuildapp">
+  <!-- <meta name="twitter:creator" content="@sippey"> -->
+  <meta name="twitter:title" content="<%= @book.name %>">
+  <meta name="twitter:image" content="<%= @book.url %>">
+  <meta name="twitter:image:width" content="640">
+  <meta name="twitter:image:height" content="640">
+
+  <!-- Facebook -->
+  <meta property="og:title" content="<%= @book.name %>" />
+  <meta property="og:type" content="image:url" />
+  <meta property="og:url" content="<%= flipbk_path("#{@book.id}") %>" />
+  <meta property="og:image" content="<%= @book.url %>" />
+</head>
+
 <body>
   
   <div id="flipbk-banner">
@@ -43,13 +60,13 @@
         <div class="social-share small-12 large-6 large-offset-3 end columns">
           <ul>
             <li>
-              <a href="http://tumblr.com/share" onclick="return !window.open(this.href, 'Tumblr', 'width=640,height=300')" class='icon-instagram' title='instagram'></a>
-            </li>
-            <li>
             <a href="http://twitter.com/share" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=300')" class="icon-twitter" title="twitter"></a>
             </li>
             <li>
             <a href="http://www.facebook.com/sharer/sharer.php?u=<%=request.original_url%>" class="icon-facebook" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')" title="facebook"></a>
+            </li>
+            <li>
+              <a href="http://tumblr.com/share" onclick="return !window.open(this.href, 'Tumblr', 'width=640,height=300')" class='icon-tumblr' title='tumblr'></a>
             </li>
           <ul>
         </div>

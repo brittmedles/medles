@@ -63,8 +63,6 @@ Flipbook::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
-  
-  ENV["DATABASE_URL"] = "postgres://qqqgzgfjoeojlb:4mFLigzN_lcsHcBzwnMhCEEnxW@ec2-54-243-48-227.compute-1.amazonaws.com:5432/d1bnio8rhdaoah"
 
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)

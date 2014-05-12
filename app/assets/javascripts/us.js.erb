@@ -1,32 +1,18 @@
-// function initialize() {
-//   var mapOptions = {
-//     zoom: 8,
-//     center: new google.maps.LatLng(-34.397, 150.644)
-//   };
-// 
-//   var map = new google.maps.Map(document.getElementById('map-canvas'),
-//       mapOptions);
-// }
-// 
-// function loadScript() {
-//   var script = document.createElement('script');
-//   script.type = 'text/javascript';
-//   script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
-//       'callback=initialize';
-//   document.body.appendChild(script);
-// }
-// 
-// window.onload = loadScript;
-
 function initialize() {
-  var bryantPark = new google.maps.LatLng(37.869260, -122.254811);
+  var jobSite = new google.maps.LatLng(40.715181, -73.961486);
   var panoramaOptions = {
-    position: bryantPark,
+    position: jobSite,
     pov: {
-      heading: 165,
-      pitch: 0
+      heading: 218.61,
+      pitch: 21,
     },
-    zoom: 1
+    disableDefaultUI: true,
+    panControl: false,
+    zoomControl: false,
+    mapTypeControl: false ,
+    scaleControl: false,
+    streetViewControl: true,
+    overviewMapControl: false
   };
   var myPano = new google.maps.StreetViewPanorama(
       document.getElementById('map-canvas'),

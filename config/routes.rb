@@ -12,6 +12,8 @@ Flipbook::Application.routes.draw do
   
    get '/us' => 'public#us'
    
+   get '/map' => 'public#map'
+   
    root :to => 'public#index'
 
 end

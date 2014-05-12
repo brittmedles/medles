@@ -42,17 +42,20 @@
 
 .side-left {
 	left: 0;
-	background: url("will.jpg") no-repeat;
+	background: url("138site3bw.jpg") no-repeat;
 	color: #fff;
 	outline: 1px solid #85eef6; /* avoid gap */
   background-size: cover;
+  background-position: center bottom;
 }
 
 .side-right {
 	right: 0;
-	background: url("britt.jpg") no-repeat;
+	background: url("will.jpg") no-repeat;
 	color: #47a3da;
 	outline: 1px solid #85eef6; /* avoid gap */
+  background-size: cover;
+  background-position: center bottom;
 }
 
 .us-overlay1 {
@@ -74,67 +77,170 @@
   left: 50%;
   z-index: 1;
   opacity: 0.9;
-  background: #024854;
+  background: #85eef6;
 }
 
-/* Intro content, profile image and name, back button */
+.us-name1 {
+  font: 40px/50px 'Roboto', sans-serif;
+  color: #85eef6 !important;
+  font-weight: 400;
+  z-index: 5;
+}
+
+.us-name2 {
+  font: 40px/50px 'Roboto', sans-serif;
+  color: #024854 !important;
+  font-weight: 400;
+  z-index: 5;
+}
+
+.us-line1 {
+  font: 1.5em 'Roboto', sans-serif;
+  color: #85eef6;
+  font-weight: 300;
+  margin: 30px 0 26px 0;
+  z-index: 999;
+  padding: 0 20px;
+}
+
+.us-line1 a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.us-line2 {
+  font: 1.5em 'Roboto', sans-serif;
+  color: #024854;
+  font-weight: 300;
+  margin: 30px 0 26px 0;
+  z-index: 999;
+  padding: 0 20px;
+}
+
 .intro-content {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	padding: 0 1em;
-	width: 50%;
+	width: 100%;
 	cursor: pointer;
 	-webkit-transform: translateY(-50%) translateX(-50%);
 	transform: translateY(-50%) translateX(-50%);
+  z-index: 5;
 }
 
-.profile {
-	margin: 0 auto;
-	width: 140px;
-	height: 140px;
-	border-radius: 50%;
-	background: #47a3da;
+.us-icons .icon-arrow-left {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  top: 5px;
+  padding-left: 23px;
+  text-align: center;
+  color: #85eef6;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 60px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  z-index: 5;
 }
 
-.profile img {
-	max-width: 100%;
-	border-radius: 50%;
-	opacity: 0.6;
+.icon-arrow-left:before {
+  content: "\e608";
 }
 
-.intro-content h1 > span {
-	display: block;
-	white-space: nowrap;
+.us-icons .icon-arrow-right {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  top: 5px;
+  padding-left: 23px;
+  text-align: center;
+  color: #024854;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 60px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  z-index: 5;
 }
 
-.intro-content h1 > span:first-child {
-	font-weight: 300;
-	font-size: 2em;
+.icon-arrow-right:before {
+  content: "\e607";
 }
 
-.intro-content h1 > span:nth-child(2) {
-	position: relative;
-	margin-top: 0.5em;
-	padding: 0.8em;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-size: 0.8em;
+#map-canvas {
+  width: 500px;
+  height: 500px;
+  margin: 0px;
+  padding: 0px;
 }
 
-.intro-content h1 > span:nth-child(2):before {
-	position: absolute;
-	top: 0;
-	left: 25%;
-	width: 50%;
-	height: 2px;
-	background: #fff;
-	content: '';
-}
 
-.side-right .intro-content h1 > span:nth-child(2):before {
-	background: #47a3da;
-}
+
+
+
+
+
+
+
+
+
+
+//.profile {
+//  margin: 0 auto;
+//  width: 140px;
+//  height: 140px;
+//  border-radius: 50%;
+//  background: #47a3da;
+//}
+//
+//.profile img {
+//  max-width: 100%;
+//  border-radius: 50%;
+//  opacity: 0.6;
+//}
+//
+//.intro-content h1 > span {
+//  display: block;
+//  white-space: nowrap;
+//}
+//
+//.intro-content h1 > span:first-child {
+//  font-weight: 300;
+//  font-size: 2em;
+//}
+//
+//.intro-content h1 > span:nth-child(2) {
+//  position: relative;
+//  margin-top: 0.5em;
+//  padding: 0.8em;
+//  text-transform: uppercase;
+//  letter-spacing: 1px;
+//  font-size: 0.8em;
+//}
+//
+//.intro-content h1 > span:nth-child(2):before {
+//  position: absolute;
+//  top: 0;
+//  left: 25%;
+//  width: 50%;
+//  height: 2px;
+//  background: #fff;
+//  content: '';
+//}
+//
+//.side-right .intro-content h1 > span:nth-child(2):before {
+//  background: #47a3da;
+//}
 
 .back {
 	position: fixed;

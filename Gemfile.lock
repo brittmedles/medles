@@ -76,6 +76,9 @@ GEM
     faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
     ffi (1.9.3)
+    gon (5.0.4)
+      actionpack (>= 2.3.0)
+      json
     gravatarify (3.0.0)
     hashie (2.0.5)
     hike (1.2.3)
@@ -199,6 +202,7 @@ DEPENDENCIES
   database_cleaner
   debugger
   dotenv-rails
+  gon
   gravatarify (~> 3.0.0)
   instagram
   jquery-rails

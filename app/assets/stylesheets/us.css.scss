@@ -30,7 +30,7 @@
 }
 
 #map-canvas {
-  position: relative;
+  position: fixed;
   width: 50%;
   height: 100vh;
   margin: 0px;
@@ -46,7 +46,16 @@
   z-index: 2;
   opacity: 0.9;
   background: #024854;
+  //transition: width 1s linear;
 }
+
+//.us-overlay1.active {
+//  background: red;
+//}
+//
+//.us-overlay1.inactive{
+//  background: #024854;
+//}
 
 .us-overlay2 {
   position: fixed;
@@ -153,14 +162,6 @@
 .icon-arrow-right:before {
   content: "\e607";
 }
-
-//.move-left {
-//  transform: translateX(500px);
-//}
-//
-//.move-right {
-//  transform: translateX(-50%);
-//}
 
 
 

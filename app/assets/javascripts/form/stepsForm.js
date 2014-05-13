@@ -45,7 +45,7 @@
 	stepsForm.prototype._init = function() {
 		// current question
 		this.current = 0;
-
+    
 		// questions
 		this.questions = [].slice.call( this.el.querySelectorAll( 'ol.questions > li' ) );
 		// total questions
@@ -193,7 +193,7 @@
 
 	// submits the form
 	stepsForm.prototype._submit = function() {
-    this.options.onSubmit( this.el );
+      this.options.onSubmit( this.el );  
 	}
   
 	// TODO (next version..)

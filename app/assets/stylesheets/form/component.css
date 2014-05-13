@@ -300,12 +300,12 @@
 }
 
 /* Final hiding of form / showing message */
-.simform-inner.hide {
-	visibility: hidden;
-	opacity: 0;
-	-webkit-transition: opacity 0.3s, visibility 0s 0.3s;
-	transition: opacity 0.3s, visibility 0s 0.3s;
-}
+/*.simform-inner.hide {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, visibility 0s 0.3s;
+  transition: opacity 0.3s, visibility 0s 0.3s;
+}*/
 
 /* No JS Fallback */
 .no-js .simform {

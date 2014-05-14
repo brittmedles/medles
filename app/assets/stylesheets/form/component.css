@@ -2,11 +2,11 @@
 	font-weight: normal;
 	font-style: normal;
 	font-family: 'icomoon';
-	src:url(asset_path('icomoon.eot?-9heso'));
-	src:url(asset_path('icomoon.eot?#iefix-9heso')) format('embedded-opentype'),
-		url(asset_path('icomoon.woff?-9heso')) format('woff'),
-		url(asset_path('icomoon.ttf?-9heso')) format('truetype'),
-		url(asset_path('icomoon.svg?-9heso#icomoon')) format('svg');
+	src: asset-url('../icomoon/icomoon.eot?-9heso');
+	src: asset-url('../icomoon/icomoon.eot?#iefix-9heso') format('embedded-opentype'),
+		asset-url('../icomoon/icomoon.woff?-9heso') format('woff'),
+		asset-url('../icomoon/icomoon.ttf?-9heso') format('truetype'),
+		asset-url('../icomoon/icomoon.svg?-9heso#icomoon') format('svg');
 }
 
 .simform {

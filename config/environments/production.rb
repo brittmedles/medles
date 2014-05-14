@@ -63,6 +63,9 @@ Flipbook::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+  
+  # Include fonts
+  config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
 
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)

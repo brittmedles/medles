@@ -8,18 +8,22 @@
           heading: 218.61,
           pitch: 21,
         },
+        zoom: 0,
         disableDefaultUI: true,
         panControl: false,
+        scaleControl: false,
         zoomControl: false,
         mapTypeControl: false ,
         scaleControl: false,
-        streetViewControl: true,
-        overviewMapControl: false
+        streetViewControl: false,
+        overviewMapControl: false,
+        scrollwheel: false
       };
+    
       var myPano = new google.maps.StreetViewPanorama(
           document.getElementById('map-canvas'),
           panoramaOptions);
-      myPano.setVisible(true);
+          myPano.setVisible(true);
     }
 
     function loadScript() {
@@ -37,95 +41,76 @@
 
 <body>
   
-	<div class="container">
-		<div id="splitlayout" class="splitlayout">
-      <div id="us-banner">
-        <div class="row full-width">
-      		<div id="splitlayout" class="splitlayout">
-      			<div class="intro">
-      				<div id="map-canvas" class="side-left small-12 large-6 columns">
-                <div class="us-overlay1"></div>
-                
-                <div class="info">
-                  <div class="us-name1">
-                    <span>Watch Us Build.</span>
-                  </div>
-        
-                  <div class="us-line1">
-                    <span>We are currently building at 138 N 1st in Brooklyn, NY</span>
-                  </div>
-        
-                  <div class="us-line1">
-                    <span>We'll be under construction soon.</span>
-                  </div>
-        
-                  <div class="us-line1">
-                    <span>Stop by to say hello. <a href="https://twitter.com/watchusbuildapp">Follow us.</a></span>
-                  </div>
-        
-                  <div class="us-icons">
-                    <a href="" class="icon-arrow-left"></a>
-                  </div>
-                </div>
-      				</div>
-          
-      				<div class="side-right small-12 large-6 columns">
-                <div class="us-overlay2"></div>
-                
-                <div class="info">
-                  <div class="us-name2">
-                    <span>Build With Us.</span>
-                  </div>
-        
-                  <div class="us-line2">
-                    <span>Use our app to show us what you're building</span>
-                  </div>
-        
-                  <div class="us-line2">
-                    <span>Or, better yet, collaborate with us on our project.</span>
-                  </div>
-        
-                  <div class="us-line2">
-                    <span>We are building a team. <a href="/">Join us.</a></span>
-                  </div>
-        
-                  <div class="us-icons">
-                    <a href="" class="icon-arrow-right"></a>
-                  </div>
-                </div>
-      				</div>
-          
-      			</div><!-- /intro -->
-      		</div><!-- /splitlayout -->
-        </div><!-- /row -->
-        
+  <section>  
+    <div id="watch-us-build">
+      <div class="row full-width">
+  			<div id="map-canvas" class="small-12 large-12 columns">
+          <div class="us-overlay1"></div>
+    
+          <div class="info1">
+            <div class="us-name1">
+              <span>Watch Us Build.</span>
+            </div>
+
+            <div class="us-line1">
+              <span>We are currently building at 138 N 1st in Brooklyn, NY</span>
+            </div>
+
+            <div class="us-line1">
+              <span>We'll be under construction soon.</span>
+            </div>
+
+            <div class="us-line1">
+              <span>Stop by to say hello. <a href="https://twitter.com/watchusbuildapp">Follow us!</a></span>
+            </div>
+
+            <!-- <div class="us-icons">
+              <a href="" class="icon-arrow-left"></a>
+            </div> -->
+          </div>
+  			</div>   			
       </div>
-      
-      
-  
-    	<div class="page page-left">
-    		<div class="page-inner">
-      
-          <!-- <div id="map-canvas"></div> -->
-      
-      
-        </div>
-      </div>
-  
-    	<div class="page page-right">
-    		<div class="page-inner">
-      
+    </div>
+  </section>
+   
+  <section>
+    <div class="build-with-us">
+    	<div class="row full-width">
+        <div class="small-12 large-12 columns">
+          <div class="us-overlay2"></div>
+          
+          <div class="info2">
+            <div class="us-name2">
+              <span>Build With Us.</span>
+            </div>
+
+            <div class="us-line2">
+              <span>Use our app to show us what you're building</span>
+            </div>
+
+            <div class="us-line2">
+              <span>Or, better yet, collaborate with us on our project.</span>
+            </div>
+
+            <div class="us-line2">
+              <span>We are building a team. <a href="/">Join us.</a></span>
+            </div>
+
+            <div class="us-icons">
+              <a href="" class="icon-arrow-right"></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  
+    	
+      
   
   
 
 </body>
-
-
-
 
 
 

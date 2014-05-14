@@ -41,19 +41,19 @@
 
 <body>
   
-  <section>  
+  <section> 
     <div id="watch-us-build">
       <div class="row full-width">
   			<div id="map-canvas" class="small-12 large-12 columns">
           <div class="us-overlay1"></div>
-    
+  
           <div class="info1">
             <div class="us-name1">
               <span>Watch Us Build.</span>
             </div>
 
             <div class="us-line1">
-              <span>We are currently building at 138 N 1st in Brooklyn, NY</span>
+              <span>We are currently building at <a href="https://www.google.com/maps/place/138+N+1st+St/@40.7151878,-73.9615335,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25960f73de4fb:0xd4d30a7dda4fad60" target="_blank">138 N 1st</a> in Brooklyn, NY</span>
             </div>
 
             <div class="us-line1">
@@ -61,11 +61,11 @@
             </div>
 
             <div class="us-line1">
-              <span>Stop by to say hello. <a href="https://twitter.com/watchusbuildapp">Follow us!</a></span>
+              <span>Stop by to say hello. <a href="https://twitter.com/watchusbuildapp" target="_blank">Follow us!</a></span>
             </div>
 
             <div class="us-icons">
-              <a href="#section2" class="icon-arrow-down1"></a>
+              <a href="" class="icon-arrow-down1"></a>
             </div>
           </div>
   			</div>   			
@@ -74,84 +74,98 @@
   </section>
    
   <section>
-    <a name="section2"></a>
-      <div id="build-with-us">
-      	<div class="row full-width">
-          <div class="small-12 large-12 columns">
-            <div class="us-overlay2"></div>
-          
-            <div class="info2">
-              <div class="us-name2">
-                <span>Build With Us.</span>
-              </div>
-
-              <div class="us-line2">
-                <span>Use our app to show us what you're building</span>
-              </div>
-
-              <div class="us-line2">
-                <span>Or, better yet, collaborate with us on our project.</span>
-              </div>
-
-              <div class="us-line2">
-                <span>We are building a team. <a href="/">Join us.</a></span>
-              </div>
-
-              <div class="us-icons">
-                <a href="#section3" class="icon-arrow-down2"></a>
-              </div>
+    <div id="build-with-us">
+    	<div class="row full-width">
+        <div class="small-12 large-12 columns">
+        
+          <div class="info2">
+            <div class="us-name2">
+              <span>Build With Us.</span>
             </div>
-          </div>
-          
-          <div class="work-samples small-12 large-12 columns">
-            <div class="sample1 small-12 large-4 columns">
-              
+
+            <div class="us-line2">
+              <span>Use our app to show us what you're building</span>
             </div>
-            
-            <div class="sample2 small-12 large-4 columns">
-          
+
+            <div class="us-line2">
+              <span>Or, better yet, collaborate with us on our project.</span>
             </div>
-            
-            <div class="sample3 small-12 large-4 columns">
-          
+
+            <div class="us-line2">
+              <span>We are building a team. <a href="/">Join us.</a></span>
+            </div>
+
+            <div class="us-icons">
+              <a href="" class="icon-arrow-down2"></a>
             </div>
           </div>
         </div>
+        
+        <div class="work-samples small-12 large-12 columns">
+          <div class="sample1 small-12 large-4 columns">
+            <%= image_tag("sample1.jpg") %>
+          </div>
+          
+          <div class="sample3 small-12 large-2 columns">
+            <%= image_tag("sample2.jpg") %>
+          </div>
+          
+          <div class="sample2 small-12 large-4 columns">
+            <%= image_tag("sample3.jpg") %>
+          </div>
+          
+          <div class="sample3 small-12 large-2 columns">
+            <%= image_tag("sample4.jpg") %>
+          </div>
+        </div>
       </div>
+    </div>
   </section>
   
+  <!-- <div class="separator"></div> -->
+  
   <section>
-    <a name="section3"></a>
-      <div id="lead-by">
-      	<div class="row full-width">
-          <div class="small-12 large-12 columns">
-            <div class="us-overlay2"></div>
-          
-            <div class="info2">
-              <div class="us-name2">
-                <span>A team of skilled artisans.</span>
-              </div>
+    <div id="lead-by">
+    	<div class="row full-width">
+        <div class="small-12 large-12 columns">
+          <div class="us-overlay2"></div>
+        
+          <div class="info3">
+            <div class="us-name3">
+              <span>We are led by architect, Will Corcoran.</span>
+            </div>
 
-              <div class="us-line2">
-                <span>Use our app to show us what you're building</span>
-              </div>
+            <div class="us-line3">
+              <span>And a passion for design/build/develop.</span>
+            </div>
 
-              <div class="us-line2">
-                <span>Or, better yet, collaborate with us on our project.</span>
-              </div>
+            <div class="us-line3">
+              <span>We can take any project from design thru construction.</span>
+            </div>
 
-              <div class="us-line2">
-                <span>We are building a team. <a href="/">Join us.</a></span>
-              </div>
+            <div class="us-line3">
+              <span>Let us build for you. <a href="/">Contact us.</a></span>
+            </div>
 
-              <div class="us-icons">
-                <a href="" class="icon-arrow-down2"></a>
-              </div>
+            <div class="us-icons">
+              <a href="" class="icon-arrow-up"></a>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </section>
+  
+  <div id="login-footer"> 
+    <div class="row full-width">
+      <!-- <div class="us-overlay3"></div> -->
+      <div class="footer small-12 large-12 columns">
+          <div>
+            <span>DESIGN/BUILD/DEVELOP</span><br>
+          </div> 
+      </div> 
+    </div> 
+  </div>
   
     	
       

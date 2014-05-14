@@ -1,9 +1,23 @@
-// $(document).ready(function() {
-//   var active = function(){
-//     $('.us-overlay1').removeClass('inactive').addClass('active');
-//   };
-// 
-//   var inactive = function(){
-//     $('.us-overlay1').removeClass('active').addClass('inactive');
-//   };
-// });
+$(document).ready(function() {
+  $(".icon-arrow-down1").click(function (){
+    $('body').animate({
+      scrollTop: $("#build-with-us").offset().top
+      }, 800);
+    return false;
+  });
+  
+  $(".icon-arrow-down2").click(function (){
+    $('body').animate({
+      scrollTop: $("#login-footer").offset().top
+      }, 800);
+    return false;
+  });
+  
+  $(".icon-arrow-up").click(function (){
+    $('body').animate({
+      scrollTop: $("#watch-us-build").offset().top
+      }, 800);
+    return false;
+  });
+});
+

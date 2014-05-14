@@ -59,7 +59,7 @@
 
 .info1 {
   text-align: center;
-  padding-top: 20em;
+  padding-top: 16em;
 }
 
 .us-name1 {
@@ -84,25 +84,10 @@
   position: relative;
   text-decoration: none;
   color: #FFF;
+  font-weight: 400;
 }
 
-.us-line2 {
-  position: relative;
-  font: 2em 'Roboto', sans-serif;
-  color: #024854;
-  font-weight: 300;
-  margin: 30px 0 26px 0;
-  z-index: 5;
-  padding: 0 20px;
-}
-
-.us-line2 a {
-  position: relative;
-  text-decoration: none;
-  color: #024854;
-}
-
-.us-icons .icon-arrow-left {
+.us-icons .icon-arrow-down1 {
   text-decoration: none;
   display: block;
   position: relative;
@@ -122,11 +107,11 @@
   z-index: 5;
 }
 
-.icon-arrow-left:before {
-  content: "\e608";
+.icon-arrow-down1:before {
+  content: "\e609";
 }
 
-.us-icons .icon-arrow-right {
+.us-icons .icon-arrow-down2 {
   text-decoration: none;
   display: block;
   position: relative;
@@ -146,14 +131,14 @@
   z-index: 5;
 }
 
-.icon-arrow-right:before {
-  content: "\e607";
+.icon-arrow-down2:before {
+  content: "\e609";
 }
 
 #build-with-us {
-	//position: relative;
+	position: relative;
 	overflow-x: hidden;
-	height: 500px;
+	height: 100vh;
 	width: 100%;
 }
 
@@ -173,11 +158,46 @@
 }
 
 .us-name2 {
-  position: relative;
+  //position: relative;
   font: 40px/50px 'Roboto', sans-serif;
   color: #024854 !important;
   font-weight: 400;
+}
+
+.us-line2 {
+  position: relative;
+  font: 2em 'Roboto', sans-serif;
+  color: #024854;
+  font-weight: 300;
+  margin: 30px 0 26px 0;
   z-index: 5;
+  padding: 0 20px;
+}
+
+.us-line2 a {
+  position: relative;
+  text-decoration: none;
+  color: #024854;
+  font-weight: 400;
+}
+
+#lead-by {
+	position: relative;
+	overflow-x: hidden;
+	height: 500px;
+	width: 100%;
+}
+
+.work-samples {
+  width: 100%;
+  height: 200px;
+}
+
+.sample1 {
+  position: relative;
+  height: 100%;
+  background: url('sample1.jpg') 50% 0 fixed;;
+  background-size: cover;
 }
 
 

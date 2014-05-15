@@ -67,13 +67,24 @@ class FlipbksController < ApplicationController
     if @book.save
       dir = "#{RAILS_ROOT}/tmp/#{@book.id}/"
       name = "#{@book.user_id}-#{@book.id}-#{@book.name.gsub(/\s+/, "")}"
-  
-      @book.photos.each do |photo| 
-        Dir.mkdir(dir) unless File.exists?(dir)
-        open("#{dir}image#{photo.order}#{photo.id}.png", 'wb') do |file|
-        file << open(photo.url).read
+      Photo.all.each do |p|
+        if p.flipbk_id == @book.id
+          p.flipbk_id = nil
+          p.save
+        end 
       end
-    end
+      
+      if params[:photos]      
+        params[:photos].each do |p|
+          photo = Photo.find(p)
+          photo.flipbk_id = @book.id
+          photo.save
+          Dir.mkdir(dir) unless File.exists?(dir)
+          open("#{dir}image#{photo.id}.png", 'wb') do |file|
+            file << open(photo.url).read
+          end
+        end
+      end
       
       save_to_s3(@book, dir, name)
       

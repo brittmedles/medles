@@ -2,13 +2,13 @@ $(document).ready(function(){
   
   // Allows Google map to load first
   $('#build-with-us').hide();
-  $('#build-with-us').delay(1000).fadeIn(500);
+  $('#build-with-us').delay(3000).fadeIn(500);
   
   $('#lead-by').hide();
-  $('#lead-by').delay(1000).fadeIn(500);
+  $('#lead-by').delay(3000).fadeIn(500);
   
   $('#login-footer').hide();
-  $('#login-footer').delay(1000).fadeIn(500);
+  $('#login-footer').delay(3000).fadeIn(500);
   
   // Rollover for galleries
   $(".wrap").mouseenter(function() {            

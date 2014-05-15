@@ -10,7 +10,11 @@ class PublicController < ApplicationController
         @public_flipbks << f
       end
     end
+    
+    @placeholder = (20 - @public_flipbks.length)
   end
+  
+  
 
   def create
     @user = User.new(params[:user])

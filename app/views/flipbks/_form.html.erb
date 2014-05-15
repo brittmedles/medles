@@ -31,9 +31,9 @@
     <div class="row full-width">
       <% User.find(session[:user_id]).photos.all.each do |p| %>
         <div class="wrap3 small-12 large-2 end columns">
-         <label><%= image_tag((p.url), :class => "insta-photo") %></label>
+         <%= image_tag((p.url), :class => "insta-photo") %>
 
-         <%= check_box_tag('photos[]', p.id, (((p.flipbk_id == @book.id)&& p.flipbk_id != nil)? true : false), :class => "photo-chk", :style => "visibility: show;" ) %>
+         <%= check_box_tag('photos[]', p.id, (((p.flipbk_id == @book.id)&& p.flipbk_id != nil)? true : false), :class => "photo-chk", :style => "visibility: hidden;" ) %>
          
          <% p.order = p.order || 0 %>
          

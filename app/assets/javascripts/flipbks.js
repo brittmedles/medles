@@ -29,16 +29,21 @@ $(document).ready(function(){
     $(this).find('.book-name').stop().fadeOut(100);
   });
   
-  // Toggles the event for photo checkboxes     
+  // Checks to see if the box is checked for editing
+  $('.wrap3 input:checkbox:checked').each(function() {
+   $(this).prev().addClass('photo-overlay');
+  });
+  
+  // Toggles the styling for photo checkboxes     
   $('.insta-photo').on('click', function() {
     var image = $(this);
   
     if (image.hasClass('photo-overlay')) {
       image.removeClass('photo-overlay');
-      image.parent().next().removeAttr('checked');
+      image.next().removeAttr('checked');
     } else {
       image.addClass('photo-overlay');
-      image.parent().next().prop('checked', true);
+      image.next().prop('checked', true);
     }
   });
        

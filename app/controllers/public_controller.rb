@@ -11,7 +11,7 @@ class PublicController < ApplicationController
       end
     end
     
-    @placeholder = (20 - @public_flipbks.length)
+    @placeholder = (24 - @public_flipbks.length)
   end
   
   

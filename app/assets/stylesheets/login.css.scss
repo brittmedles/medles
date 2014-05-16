@@ -16,7 +16,7 @@
   background: #024854;
 }
 
-.pg_header {
+.login-header {
   padding-top: 125px;
   text-align: center;
   font: 60px/60px 'Roboto', sans-serif;
@@ -74,6 +74,29 @@
 .footer {
   padding: 0;
 }
+
+@media only screen and (max-width: 40em) {
+  
+  .login-header {
+    font: 28px/60px 'Roboto', sans-serif;
+  }
+  
+  #login-footer {
+    font: 2em/60px 'Roboto', sans-serif;
+    padding: 0;
+  }
+   
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -122,7 +122,6 @@
 
 #profile-footer {
   position: absolute;
-  bottom: 0;
   width: 100%;
   //border-top: 1px solid #85eef6;
   margin: 0;
@@ -133,6 +132,32 @@
   font-weight: 700;
   height: 150px;
   background: #024854;
+}
+
+@media only screen and (max-width: 40em) {
+ 
+  #profile-banner {
+    height: 600px;
+  }
+
+  .me-overlay {
+    height: 600px;
+  }
+  
+  .avatar {
+    text-align: center;
+  }
+  
+  .me-name {
+    padding: 0;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  #profile-footer {
+    font: 3em/60px 'Roboto', sans-serif;
+  }
+
 }
 
 

@@ -160,6 +160,19 @@ html, body {
   content: "\e605";
 }
 
+@media only screen and (max-width: 40em) {
+
+  .navigation ul {
+    float: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .navigation li a {
+    padding: 0 8px;
+  }
+
+}
 
 
 

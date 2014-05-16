@@ -189,6 +189,12 @@
   background: #024854;
 }
 
+@media only screen and (max-width: 40em) {
+ 
+  #hp-footer {
+    font: 3em/60px 'Roboto', sans-serif;
+  }
 
+}
 
 

@@ -367,6 +367,22 @@
   content: "\e605";
 }
 
+@media only screen and (max-width: 40em) {
+ 
+  #new-flipbk-banner {
+    height: 500px;
+  }
+
+  .new-flipbk-overlay {
+    height: 500px;
+  }
+  
+  .flipbk-formA {
+    height: 400px;
+  }
+      
+}
+
 
 
 

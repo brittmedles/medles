@@ -5,16 +5,16 @@
       <div class="header small-12 large-10 large-offset-2 end columns">
         <strong class="logo"><a href="/">watch us build</a></strong>
       </div>
-      
+    
       <div class="row full-width">
         <div class="avatar desaturate small-12 large-1 large-offset-2 columns">
           <%= gravatar_tag @user, :size => 150 %>
         </div>
-        
+      
         <div class="me-name small-12 large-9 columns">
           <span><%= current_user.name %></span>
         </div>
-        
+      
         <div class="btn-menu small-12 large-9 columns">
           <ul>
             <li>
@@ -25,28 +25,41 @@
             </li>  
           </ul>        
         </div>
-      </div>
-          
-     </div> 
+      </div>  
+    </div> 
   </div>
-  
+
   <div class="me-overlay"></div>
-  
-  <div class="hp-flipbks">
+
+  <div class="profile-flipbks">
     <div class="row full-width">
-      <% @user.flipbks.each do |book| %>
-        <div class="wrap2 small-12 large-3 end columns">
-          <a href="<%= flipbk_path(book.id) %>" class="icon-play"</a>
-          <a href="<%= flipbk_path(book.id) %>" class="user-name">You</a>
-          <a href="<%= flipbk_path(book.id) %>" class="book-name"><%= book.name %></a>
-          <% book.delete if book.photos.all.empty? %>
-          <%= link_to(image_tag(book.photos.all.first.url, :alt => book.name, :class => "gallery-img"), flipbk_path(book.id)) if !(book.photos.all.empty?) %>
-          <div class="gallery-overlay2"></div>
+      <% if @user.flipbks.all.empty? %>
+        <div class="empty">
+          <span>YOU NEED TO START BUILDING!</span>
         </div>
-      <% end %>
+      <% else %>
+        <% @user.flipbks.each do |book| %>
+          <div class="wrap2 small-12 large-3 end columns">
+            <a href="<%= flipbk_path(book.id) %>" class="icon-play"</a>
+            <a href="<%= flipbk_path(book.id) %>" class="user-name">You</a>
+            <a href="<%= flipbk_path(book.id) %>" class="book-name"><%= book.name %></a>
+            <% book.delete if book.photos.all.empty? %>
+            <%= link_to(image_tag(book.photos.all.first.url, :alt => book.name, :class => "gallery-img"), flipbk_path(book.id)) if !(book.photos.all.empty?) %>
+            <div class="gallery-overlay2"></div>
+          </div>
+        <% end %>
+      <% end %>    
     </div>
   </div>
 
-  <div class="push"></div>
+  <div id="profile-footer"> 
+    <div class="row full-width">
+      <div class="footer small-12 large-12 columns">
+          <div>
+            <span>WATCH US BUILD</span><br>
+          </div> 
+      </div> 
+    </div> 
+  </div>
 
 </body>

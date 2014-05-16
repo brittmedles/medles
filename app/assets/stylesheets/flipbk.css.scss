@@ -133,6 +133,9 @@
   margin: 0;
   padding: 10px 0;
   list-style-type: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .flipbk-formB input[type="submit"] {
@@ -240,6 +243,10 @@
   opacity: 0.9;
   border: 1px solid #FFF;
   //color: #FFF;
+}
+
+.flipbk-photos {
+  min-height: 500px;
 }
 
 #flipbk-footer {

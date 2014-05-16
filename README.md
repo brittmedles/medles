@@ -1,4 +1,4 @@
-flipbook.
+Watch Us Build
 ========
 
-flipbook. Animate your Instagram photos.
+We love to build. Watch us build. And, build with us. Use our app to show the world what you're building.

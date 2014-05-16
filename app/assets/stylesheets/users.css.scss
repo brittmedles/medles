@@ -4,7 +4,7 @@
 }
 
 .me-overlay {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 300px;
   top: 0;
@@ -72,6 +72,21 @@
   //color: #FFF;
 }
 
+.empty {
+  font: 40px/50px 'Roboto', sans-serif;
+  color: #024854 !important;
+  font-weight: 400;
+  z-index: 2;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.profile-flipbks .row {
+  padding: 5px 5px;
+  background: #85eef6;
+  min-height: 500px;
+}
+
 .profile-gallery{
   margin: 0;
   padding: 1px 1px;
@@ -103,6 +118,21 @@
   z-index: 2;
   display: none;
   border: 15px solid #85eef6;
+}
+
+#profile-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  //border-top: 1px solid #85eef6;
+  margin: 0;
+  padding-top: 11px;
+  text-align: center;
+  color: #85eef6;
+  font: 8em/60px 'Roboto', sans-serif;
+  font-weight: 700;
+  height: 150px;
+  background: #024854;
 }
 
 

@@ -42,7 +42,7 @@ gem 'unicorn'
 # gem 'capistrano'
 
 # To use debugger
-gem 'debugger'
+# gem 'debugger'
 
 gem 'gravatarify', '~> 3.0.0'
 
